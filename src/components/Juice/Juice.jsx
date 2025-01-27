@@ -57,18 +57,18 @@ function Juice() {
                     <div
                         data-aos='fade-up'
                         key={`juice-${idx}`}
-                        className="group relative m-4 p-4 rounded-full bg-cover bg-center flex items-end cursor-pointer w-72 h-72"
+                        className="group relative m-6 my-8 p-4 rounded-full bg-cover bg-center flex items-center justify-center cursor-pointer w-64 h-64"
                         style={{ backgroundColor: `${juice.color}` }}>
-                        <div className="fixed top-[-60px] right-2 flex w-full p-2">
+                        <div className="fixed top-[-65px] right-2 flex w-full">
                             <p data-aos='fade-up' className="text-gray-300 uppercase text-[18px] font-bold mono-sans" style={{color: `${juice.color}`}}>{juice.title}</p>
                         </div>
                         <div className="flex">
-                            <div data-aos='fade-up' className='fixed top-[-35px] right-2'>
-                                <img src={juice.image} alt="images" width={110} className='rotate-12 hover:rotate-6 hover:scale-125 transition-all duration-150 ease-in-out' />
+                            <div data-aos='fade-up' className='flex'>
+                                <img src={juice.image} alt="images" width={120} className='hover:rotate-6 hover:scale-125 transition-all duration-150 ease-in-out' />
                             </div>
-                            <div data-aos='fade-up' className='fixed top-[70px] left-4'>
+                            {/* <div data-aos='fade-up' className='fixed top-[70px] left-9'>
                                 <img src={juice.sideImg} alt="images" width={110} className='rotate-12 hover:rotate-6 hover:scale-125 transition-all duration-150 ease-in-out' />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 ))}
