@@ -48,8 +48,8 @@ function Juice() {
 
     return (
         <section className='min-h-[50vh] p-8' id='juice'>
-            <div className="flex flex-col items-center justify-center mb-6 gap-1">
-                <h1 data-aos='fade-up' className='text-5xl md:text-7xl text-teal-950 font-extrabold'>Our Juice</h1>
+            <div className="flex flex-col items-center justify-center p-5 mb-6 gap-1">
+                <h1 data-aos='fade-up' className='text-5xl md:text-6xl text-teal-950 font-extrabold mono-sans'>Our Juice</h1>
                 <p data-aos='fade-up' className='text-xl font-medium'>Make your Choice</p>
             </div>
             <div className="flex flex-wrap col-span-3 items-center justify-center gap-10 mt-16 md:p-6">
@@ -60,7 +60,7 @@ function Juice() {
                         className="group relative m-4 p-4 rounded-full bg-cover bg-center flex items-end cursor-pointer w-72 h-72"
                         style={{ backgroundColor: `${juice.color}` }}>
                         <div className="fixed top-[-60px] right-2 flex w-full p-2">
-                            <p data-aos='fade-up' className="text-gray-300 uppercase text-[18px] font-bold" style={{color: `${juice.color}`}}>{juice.title}</p>
+                            <p data-aos='fade-up' className="text-gray-300 uppercase text-[18px] font-bold mono-sans" style={{color: `${juice.color}`}}>{juice.title}</p>
                         </div>
                         <div className="flex">
                             <div data-aos='fade-up' className='fixed top-[-35px] right-2'>

@@ -16,7 +16,7 @@ function About() {
   return (
     <section className='min-h-[100vh] px-8' id='about'>
       <div className="flex flex-col gap-1 pt-24">
-        <h1 className='text-center text-4xl font-bold text-teal-950 mt-2'>About Asher</h1>
+        <h1 className='text-center text-5xl font-bold text-teal-950 mt-2 mono-sans'>About Asher</h1>
 
         <div className="flex flex-col lg:flex-row gap-3 mt-5">
           {/* left */}

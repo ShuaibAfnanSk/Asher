@@ -14,8 +14,8 @@ function About() {
   return (
     <section className='min-h-[50vh] p-8' id='about'>
       <div className="flex items-center justify-center flex-col mb-5 gap-1">
-        <h1 data-aos='fade-up' className='text-5xl md:text-7xl text-teal-950 font-extrabold'>About Us</h1>
-        <p data-aos='fade-up' className='text-xl font-medium'>Who are we?</p>
+        <h1 data-aos='fade-up' className='text-5xl md:text-6xl text-teal-950 font-extrabold mono-sans'>About Us</h1>
+        <p data-aos='fade-up' className='text-xl font-medium mb-8'>Who are we?</p>
       </div>
 
       <div className="flex flex-col lg:flex-row">

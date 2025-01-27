@@ -43,7 +43,7 @@ function Contact() {
     <section className='min-h-[100vh] px-6' id='contact'>
       <div className="flex flex-col gap-1">
         <h1 className='text-xl font-semibold mt-24'>Contact</h1>
-        <p className='text-4xl text-teal-950 font-bold'>Get in Touch</p>
+        <p className='text-4xl text-teal-950 font-bold mono-sans'>Get in Touch</p>
       </div>
       <div className="flex flex-col lg:flex-row mt-2">
         {/* image */}
