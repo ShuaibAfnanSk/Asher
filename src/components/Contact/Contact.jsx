@@ -41,9 +41,9 @@ function Contact() {
     };
     return (
         <section className='flex flex-col min-h-[50vh] p-8' id='contact'>
-            <div className="flex flex-col gap-1 mb-5">
-                <h1 data-aos='fade-up' className='text-4xl text-teal-950 font-extrabold'>Contact</h1>
-                <p data-aos='fade-up'>Get in Touch</p>
+            <div className="flex flex-col items-center justify-center gap-1 mb-5">
+                <h1 data-aos='fade-up' className='text-5xl md:text-7xl text-teal-950 font-extrabold'>Contact</h1>
+                <p data-aos='fade-up' className='text-xl font-medium'>Get in Touch</p>
             </div>
             <div className="flex flex-col lg:flex-row">
                 {/* image */}

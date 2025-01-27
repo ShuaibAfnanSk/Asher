@@ -48,9 +48,9 @@ function Juice() {
 
     return (
         <section className='min-h-[50vh] p-8' id='juice'>
-            <div className="flex flex-col mb-6 gap-1">
-                <h1 data-aos='fade-up' className='text-4xl text-teal-950 font-extrabold'>Our Juice</h1>
-                <p data-aos='fade-up'>Make your Choice</p>
+            <div className="flex flex-col items-center justify-center mb-6 gap-1">
+                <h1 data-aos='fade-up' className='text-5xl md:text-7xl text-teal-950 font-extrabold'>Our Juice</h1>
+                <p data-aos='fade-up' className='text-xl font-medium'>Make your Choice</p>
             </div>
             <div className="flex flex-wrap col-span-3 items-center justify-center gap-10 mt-16 md:p-6">
                 {juices.map((juice, idx) => (
