@@ -54,8 +54,8 @@ function Contact() {
                 {/* Form */}
                 <div className="flex items-center justify-center basis-1/2">
                     <form action="" onSubmit={sendEmail} className='flex w-full md:w-[80%] flex-col gap-2'>
-                        <input data-aos='fade-up' type="text" name='client_name' placeholder='Name' className='p-4 text-black bg-gray-200 outline-none shadow-sm rounded-full' required />
-                        <input data-aos='fade-up' type="email" name='email' placeholder='Email' className='p-4 text-black bg-gray-200 outline-none shadow-sm rounded-full' required />
+                        <input data-aos='fade-up' type="text" name='client_name' placeholder='Name' className='p-4 text-black bg-gray-200 outline-none shadow-sm rounded-2xl' required />
+                        <input data-aos='fade-up' type="email" name='email' placeholder='Email' className='p-4 text-black bg-gray-200 outline-none shadow-sm rounded-2xl' required />
                         <textarea data-aos='fade-up' name="message" placeholder='your message' id="" cols="30" rows="10" className='p-4 text-black bg-gray-200 outline-none shadow-sm rounded-2xl' />
                         {errorMessage && <div className="text-red-600 text-xl">{errorMessage}</div>}
                         <div className="text-green-600 text-xl">{result ? <Result /> : null}</div>

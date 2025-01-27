@@ -34,10 +34,10 @@ const juices = [
         color: '#ff994d'
     },
     {
-        image: 'https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af8b39bf98e4cbfe35b6f6_Untitled%20design%20(12)%20(1).png',
+        image: 'https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6fd0a17b480f1da3bb_3.png',
         title: 'ABC Power Punch',
-        sideImg: 'https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/orange.png',
-        color: '#b14eff'
+        sideImg: 'https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/apple.png',
+        color: '#f861a1'
     }
 ];
 
@@ -52,7 +52,7 @@ function Juice() {
                 <h1 data-aos='fade-up' className='text-4xl text-teal-950 font-extrabold'>Our Juice</h1>
                 <p data-aos='fade-up'>Make your Choice</p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mt-16 md:p-6">
+            <div className="flex flex-wrap col-span-3 items-center justify-center gap-10 mt-16 md:p-6">
                 {juices.map((juice, idx) => (
                     <div
                         data-aos='fade-up'
