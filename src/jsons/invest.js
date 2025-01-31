@@ -5,15 +5,15 @@ import quality from '../assets/quality.png';
 const invest = [
     {
         name: "Nature over artificial quick fixes.",
-        image: {nature}
+        image: nature
     },
     {
         name: "Wellness over compromises.",
-        image: {wellness}
+        image: wellness
     },
     {
         name: "Quality over convenience.",
-        image: {quality}
+        image: quality
     },
 ]
 
