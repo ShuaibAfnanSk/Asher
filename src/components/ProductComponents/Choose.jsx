@@ -1,7 +1,9 @@
+import tangeriene from '../../assets/tangeriene.jpg';
+
 const Choose = () => {
     return (
         <section className="about-choose">
-            <img src="/src/assets/tangeriene.jpg" alt="" />
+            <img src={tangeriene} alt="" />
             <div className="choose-box">
                 <div className="choose-stamp">
                     <h3>Why Choose Asher?</h3>

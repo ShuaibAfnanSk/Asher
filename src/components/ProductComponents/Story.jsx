@@ -1,13 +1,16 @@
 import invest from "../../jsons/invest";
 import products from "../../jsons/products";
 import vision from "../../jsons/vision";
+import fruits from "../../assets/fruits.jpg";
+import orange from "../../assets/orange.jpg";
+import coconut from "../../assets/coconut.jpg";
 
 const Story = () => {
 
     return (
         <section className="about-story">
             <div className="about-hero">
-                <img src="/src/assets/fruits.jpg" className="about-banner" alt="" />
+                <img src={fruits} className="about-banner" alt="" />
                 <h4>Rediscover Nature, Rediscover Yourself</h4>
             </div>
             <div className="story-container">
@@ -17,13 +20,13 @@ const Story = () => {
                         <p>Health, beauty, and happiness are not found in shortcuts. They’ve been within our reach all along—hidden in the vibrant fruits, wholesome nuts, and nourishing grains that nature offers. These are life’s true luxuries, crafted by nature’s hand and designed to nurture us.</p>
                     </div>
                     <div className="story-img">
-                        <img className="img-block" src="/src/assets/orange.jpg" alt="" />
+                        <img className="img-block" src={orange} alt="" />
                         <div className="story-stamp end"><img src={products[0].details[0].image} alt="" /><p>At Asher, we believe it’s never too late to return to what’s right. It’s time to step away from the artificial and embrace the natural.</p></div>
                     </div>
                 </div>
                 <div className="story-box">
                     <div className="story-img">
-                        <img className="img-block" src="/src/assets/coconut.jpg" alt="" />
+                        <img className="img-block" src={coconut} alt="" />
                         <div className="story-stamp start"><img src={products[5].details[0].image} alt="" /><p>Life is a blessing, and so is nature. Let’s honor both by making better choices not just for today, but for every day to come.</p></div>
                     </div>
                     <div className="story-content">

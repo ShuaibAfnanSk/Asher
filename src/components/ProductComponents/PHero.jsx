@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { IoChevronBackOutline } from "react-icons/io5";
+import wavy from "../../assets/wavy.png";
 
 const PHero = ({product}) => {
 
     return (
         <section className="product-hero" style={{backgroundColor: product.color}}>
-            <img src="/src/assets/wavy.png" className="wavy" alt="" />
+            <img src={wavy} className="wavy" alt="" />
             <Link to={'/'} className="button"><button><IoChevronBackOutline size={23} className="icon" style={{backgroundColor: product.color}} /><p>Go Back</p></button></Link>
             <img className="product-img" src={product.image} alt="" />
             <div className="product-fruit">

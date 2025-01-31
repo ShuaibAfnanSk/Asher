@@ -1,3 +1,5 @@
+import invest from '../../assets/invest.jpg';
+
 const Invest = () => {
     return (
 
@@ -8,7 +10,7 @@ const Invest = () => {
             </div>
             <div className="join-container">
                 <div className="join-img">
-                    <img src="/src/assets/invest.jpg" alt="" />
+                    <img src={invest} alt="" />
                 </div>
                 <div className="join-box">
                     <div className="join-stamp">

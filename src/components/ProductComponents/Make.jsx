@@ -1,3 +1,14 @@
+import juice from '../../assets/juice.png';
+import organic from '../../assets/organic.png';
+import sugar from '../../assets/sugar.png';
+import hygiene from '../../assets/hygiene.png';
+import transparency from '../../assets/transparency.png';
+import lifestyle from '../../assets/lifestyle.png';
+import eco from '../../assets/eco.png';
+import health from '../../assets/health.png';
+import awareness from '../../assets/awareness.png';
+import community from '../../assets/community.png';
+
 const Make = () => {
     return (
         <section className="about-make">
@@ -8,7 +19,7 @@ const Make = () => {
                 <div className="make-container">
                     <h3>What Makes Us Different?</h3>
                     <div className="make-box">
-                        <img src="/src/assets/juice.png" alt="" />
+                        <img src={juice} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>1. Pure, Cold-Pressed Goodness</h4>
@@ -16,7 +27,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div className="make-box">
-                        <img src="/src/assets/organic.png" alt="" />
+                        <img src={organic} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>2. 100% Organic and Natural</h4>
@@ -29,7 +40,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div className="make-box">
-                        <img src="/src/assets/sugar.png" alt="" />
+                        <img src={sugar} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>3. Educating About Sugar – The Hidden Poison</h4>
@@ -43,7 +54,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div className="make-box">
-                        <img src="/src/assets/hygiene.png" alt="" />
+                        <img src={hygiene} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>4. Unmatched Hygiene Standards</h4>
@@ -56,7 +67,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div className="make-box">
-                        <img src="/src/assets/transparency.png" alt="" />
+                        <img src={transparency} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>5. Transparency You Can Trust</h4>
@@ -69,7 +80,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div className="make-box">
-                        <img src="/src/assets/lifestyle.png" alt="" />
+                        <img src={lifestyle} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>6. Tailored for Every Lifestyle</h4>
@@ -77,7 +88,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div className="make-box">
-                        <img src="/src/assets/eco.png" alt="" />
+                        <img src={eco} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>7. Sustainable, Eco-Friendly Packaging</h4>
@@ -86,7 +97,7 @@ const Make = () => {
                     </div>
                     <h3>Our Primary Focus</h3>
                     <div className="make-box">
-                        <img src="/src/assets/health.png" alt="" />
+                        <img src={health} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>1. Empowering a Healthy Lifestyle</h4>
@@ -94,7 +105,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div className="make-box">
-                        <img src="/src/assets/awareness.png" alt="" />
+                        <img src={awareness} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>2. Raising Awareness</h4>
@@ -105,9 +116,9 @@ const Make = () => {
                             </ul>
                             <p>With Asher - Reward Yourself, taking control of your health becomes effortless and natural. It’s not just a juice; it’s your journey to a healthier, disease-free life.</p>
                         </div>
-                    </div>
+                    </div>
                     <div className="make-box">
-                        <img src="/src/assets/community.png" alt="" />
+                        <img src={community} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>3. Building a Community</h4>
