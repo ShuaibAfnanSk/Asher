@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IoMdMenu } from "react-icons/io";
 import { FaTimes } from 'react-icons/fa';
@@ -21,9 +21,9 @@ function Navbar() {
         {menuOpen ? <FaTimes size={25} /> : <IoMdMenu size={25} />}
         </div>
         <nav className={`fixed flex flex-col items-center justify-start pt-28 md:pt-0 space-y-8 md:flex-row top-0 left-0 w-3/4 h-full bg-teal-950 font-medium text-[20px] transition-transform transform ${menuOpen ? 'translate-x-0' : '-translate-x-full'} md:relative md:flex-row md:space-y-0 md:space-x-8 md:text-[20px] md:translate-x-0`}>
-          <Link onClick={() => { window.scrollTo(0, 0); setMenuOpen(false); }} to={'/'}>Home</Link>
-          <Link onClick={() => { window.scrollTo(0, 0); setMenuOpen(false); }} to={'/about'}>About</Link>
-          <Link onClick={() => { window.scrollTo(0, 0); setMenuOpen(false); }} to={'/contact'}>Contact</Link>
+          <Link onClick={() => { setMenuOpen(false); }} to={'/'}>Home</Link>
+          <Link onClick={() => { setMenuOpen(false); }} to={'/about'}>About</Link>
+          <Link onClick={() => { setMenuOpen(false); }} to={'/contact'}>Contact</Link>
         </nav>
       </div>
     </div>
