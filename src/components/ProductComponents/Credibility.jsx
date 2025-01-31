@@ -1,3 +1,5 @@
+import source from '../../assets/source.png';
+
 const Credibility = ({ product }) => {
 
     return (
@@ -9,7 +11,7 @@ const Credibility = ({ product }) => {
             <div className="faq-tail">
                 {product.sourceCredibility.map((f, id) => (
                     <div key={id} className="faq-box">
-                        <div className="faq-block cred-block"><p>{f}</p><img src="/src/assets/source.png" alt="" /></div>
+                        <div className="faq-block cred-block"><p>{f}</p><img src={source} alt="" /></div>
                     </div>
                 ))}
             </div>

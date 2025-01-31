@@ -21,7 +21,7 @@ function Juice({ data }) {
                         key={`juice-${idx}`}
                         className="group relative m-6 my-8 p-4 rounded-full bg-cover bg-center flex items-center justify-center cursor-pointer w-64 h-64"
                         style={{ backgroundColor: `${juice.color}` }}>
-                        <div className="fixed top-[-65px] right-2 flex w-full">
+                        <div className="fixed top-[-65px] right-2 flex items-center justify-center w-full">
                             <p data-aos='fade-up' className="text-gray-300 uppercase text-[18px] font-bold mono-sans" style={{ color: `${juice.color}` }}>{juice.name}</p>
                         </div>
                         <div className="flex">

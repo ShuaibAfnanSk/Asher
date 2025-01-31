@@ -43,7 +43,7 @@ const Story = () => {
                 <div className="reward-boxes">
                     {vision.map((v) => (
                         <div className="reward-box">
-                            <h4>{v.name}</h4>
+                            <h5>{v.name}</h5>
                             <div className="reward-box-img">
                                 <img src={v.image} alt="" />
                             </div>
@@ -52,7 +52,7 @@ const Story = () => {
                     ))}
                 </div>
             </div>
-            <div className="faq-section">
+            <div className="faq-section about-faq">
                 <div className="ageTitle">
                     <h3>What You’re Investing In</h3>
                     <p>When you choose Asher, you’re not just buying a juice. You’re investing in:</p>

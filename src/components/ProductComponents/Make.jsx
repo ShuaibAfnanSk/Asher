@@ -8,13 +8,14 @@ import eco from '../../assets/eco.png';
 import health from '../../assets/health.png';
 import awareness from '../../assets/awareness.png';
 import community from '../../assets/community.png';
+import drink from '../../assets/drink.jpg';
 
 const Make = () => {
     return (
         <section className="about-make">
             <div className="make-wrapper">
                 <div className="drink-image">
-                    <img src="/src/assets/drink.jpg" alt="" />
+                    <img src={drink} alt="" />
                 </div>
                 <div className="make-container">
                     <h3>What Makes Us Different?</h3>
