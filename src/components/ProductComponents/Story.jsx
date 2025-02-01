@@ -1,16 +1,18 @@
 import invest from "../../jsons/invest";
 import products from "../../jsons/products";
 import vision from "../../jsons/vision";
-import fruits from "../../assets/fruits.jpg";
 import orange from "../../assets/orange.jpg";
-import coconut from "../../assets/coconut.jpg";
+import coconut from "../../assets/drink.jpg";
+import video from "../../assets/about.mp4";
 
 const Story = () => {
 
     return (
         <section className="about-story">
             <div className="about-hero">
-                <img src={fruits} className="about-banner" alt="" />
+                <video className="about-banner" autoPlay loop muted playsInline>
+                    <source src={video} type="video/mp4" />
+                </video>
                 <h4>Rediscover Nature, Rediscover Yourself</h4>
             </div>
             <div className="story-container">

@@ -68,6 +68,10 @@ body {
     font-family: "Macan";
 }
 
+.home-main {
+    background-color: #efefef;
+}
+
 .errorWrapper {
     width: 100%;
     height: 100vh;
@@ -135,6 +139,8 @@ body {
 .button .icon {
     color: #fff;
     border-radius: 50%;
+    height: 30px;
+    width: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -157,7 +163,6 @@ body {
     z-index: 1;
     transform: rotate(-25deg);
     object-fit: cover;
-
 }
 
 .product-fruit {
@@ -1038,11 +1043,11 @@ body {
 }
 
 .about-hero h4 {
-    font-family: "Mona Sans";
     font-size: 3rem;
     position: absolute;
     color: #fff;
     text-align: center;
+    padding: 0 2rem;
 }
 
 .story-container {
@@ -1086,12 +1091,12 @@ body {
     background-color: #fff;
     border-radius: 8px;
     bottom: -65px;
-    right: 0;
+    right: 0px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .story-stamp.end {
-    left: 0;
+    left: 0px;
     right: unset;
 }
 
@@ -1099,6 +1104,7 @@ body {
     width: 400px;
     height: 400px;
     object-fit: cover;
+    border-radius: 8px;
 }
 
 .story-stamp img {
@@ -1403,6 +1409,10 @@ body {
         width: unset;
     }
 
+    .img-block {
+        border-radius: 5px;
+    }
+
     .drink-image {
         position: unset;
     }
@@ -1494,4 +1504,214 @@ body {
     .img-block {
         width: 100%;
     }
+}
+
+.ah-wrapper {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.ah-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.ah-banner {
+    width: 450px;
+    height: 550px;
+    position: relative;
+}
+
+.ah-polo {
+    width: 100%;
+    border-radius: 12px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ah-fruit {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    animation: orange linear infinite 15s;
+}
+
+@keyframes orange {
+    0% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.ah-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ah-content {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.ah-box {
+    display: flex;
+    gap: 10px;
+}
+
+.ah-box img {
+    height: 40px;
+    width: 40px;
+}
+
+.click {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    padding: 1rem;
+    align-self: self-end;
+    transition: 0.3s ease;
+    transform: rotate(-25deg);
+}
+
+.click:hover {
+    transform: rotate(0deg) scale(0.9);
+}
+
+.ah-content h4 {
+    font-weight: 900;
+    font-family: "Mona Sans";
+}
+
+@media (max-width: 1000px) {
+    .ah-wrapper {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .ah-banner {
+        width: 400px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 500px) {
+    .ah-banner {
+        width: 100%;
+    }
+
+    .ah-content {
+        width: 100%;
+    }
+}
+
+.juice-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.juice-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.juice-card {
+    width: 350px;
+    border-radius: 12px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.juice-img {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@media (max-width: 800px) {
+    .juice-card {
+        width: 300px;
+    }
+}
+
+@media (max-width: 640px) {
+    .juice-card {
+        width: 100%;
+    }
+}
+
+.juice-can {
+    width: 100px;
+    height: 250px;
+    z-index: 1;
+    transition: 0.25s ease;
+    object-fit: cover;
+}
+
+.juice-card:hover .juice-can {
+    transform: translateY(25px) scale(1.15) rotate(5deg);
+}
+
+.juice-fruit {
+    position: absolute;
+    height: 150px;
+    object-fit: cover;
+    width: 125px;
+    bottom: -50px;
+    right: -25px;
+    transform: rotate(-15deg);
+}
+
+.juice-content {
+    position: absolute;
+    left: 0;
+    padding: 10px 25px 10px 15px;
+    border-bottom-right-radius: 3rem;
+    border-top-right-radius: 3rem;
+    top: 1rem;
+    z-index: 2;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.juice-content h4 {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.juice-content img {
+    width: 40px;
+    height: 45px;
+    object-fit: cover;
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
 }
