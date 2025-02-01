@@ -8,7 +8,7 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className='flex fixed w-full justify-between p-4 bg-teal-950 text-white rounded-b-md z-50 transition-colors duration-300'>
+    <div className='flex fixed w-full justify-between p-4 bg-teal-950 text-white z-50 transition-colors duration-300'>
       {/* logo */}
       <div className="flex py-2 px-4">
         <h1 className='text-2xl font-semibold logo'>Asher</h1>
