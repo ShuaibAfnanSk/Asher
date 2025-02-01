@@ -9,17 +9,25 @@ import health from '../../assets/health.png';
 import awareness from '../../assets/awareness.png';
 import community from '../../assets/community.png';
 import drink from '../../assets/drink.jpg';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Make = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 2000 })
+    }, []);
+
     return (
         <section className="about-make">
             <div className="make-wrapper">
                 <div className="drink-image">
-                    <img src={drink} alt="" />
+                    <img data-aos='fade-up' src={drink} alt="" />
                 </div>
                 <div className="make-container">
-                    <h3>What Makes Us Different?</h3>
-                    <div className="make-box">
+                    <h3 data-aos='fade-up'>What Makes Us Different?</h3>
+                    <div data-aos='fade-up' className="make-box">
                         <img src={juice} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
@@ -27,7 +35,7 @@ const Make = () => {
                             <p>Unlike traditional juice points, where heat and oxidation reduce nutrient quality, we use a state-of-the-art Kuvings B1700 cold press juicer. This method ensures every bottle of juice retains its natural enzymes, vitamins, and minerals, delivering maximum nutrition with every sip.</p>
                         </div>
                     </div>
-                    <div className="make-box">
+                    <div data-aos='fade-up' className="make-box">
                         <img src={organic} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
@@ -40,7 +48,7 @@ const Make = () => {
                             <p>Every sip of Asher juice is crafted for your health, naturally.</p>
                         </div>
                     </div>
-                    <div className="make-box">
+                    <div data-aos='fade-up' className="make-box">
                         <img src={sugar} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
@@ -54,7 +62,7 @@ const Make = () => {
                             <p>Choosing Asher supports long-term wellness and a healthier lifestyle.</p>
                         </div>
                     </div>
-                    <div className="make-box">
+                    <div data-aos='fade-up' className="make-box">
                         <img src={hygiene} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
@@ -67,7 +75,7 @@ const Make = () => {
                             <p>Your health and well-being are our top priorities.</p>
                         </div>
                     </div>
-                    <div className="make-box">
+                    <div data-aos='fade-up' className="make-box">
                         <img src={transparency} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
@@ -80,7 +88,7 @@ const Make = () => {
                             <p>This ensures you can make informed choices about your health, every time.</p>
                         </div>
                     </div>
-                    <div className="make-box">
+                    <div data-aos='fade-up' className="make-box">
                         <img src={lifestyle} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
@@ -88,7 +96,7 @@ const Make = () => {
                             <p>Whether you’re a gym enthusiast, a busy professional, or someone looking for a healthier alternative to sugary beverages, Asher is here for you. We’ve categorized our juices into: Pre-workout, post-workout, and everyday so you can choose what fits your routine best.</p>
                         </div>
                     </div>
-                    <div className="make-box">
+                    <div data-aos='fade-up' className="make-box">
                         <img src={eco} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
@@ -96,8 +104,8 @@ const Make = () => {
                             <p>We care about the planet as much as we care about your health. That’s why we use reusable glass bottles, contributing to a greener, more sustainable future.</p>
                         </div>
                     </div>
-                    <h3>Our Primary Focus</h3>
-                    <div className="make-box">
+                    <h3 data-aos='fade-up'>Our Primary Focus</h3>
+                    <div data-aos='fade-up' className="make-box">
                         <img src={health} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
@@ -105,7 +113,7 @@ const Make = () => {
                             <p>At Asher - Reward Yourself, true luxury means a healthy, vibrant life. Our organic juices offer nature’s finest ingredients, promoting energy, vitality, and wellness. Every sip nourishes your body, proving that health and indulgence can go hand in hand.</p>
                         </div>
                     </div>
-                    <div className="make-box">
+                    <div data-aos='fade-up' className="make-box">
                         <img src={awareness} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
@@ -118,7 +126,7 @@ const Make = () => {
                             <p>With Asher - Reward Yourself, taking control of your health becomes effortless and natural. It’s not just a juice; it’s your journey to a healthier, disease-free life.</p>
                         </div>
                     </div>
-                    <div className="make-box">
+                    <div data-aos='fade-up' className="make-box">
                         <img src={community} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
