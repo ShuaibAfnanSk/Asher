@@ -6,6 +6,8 @@ import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
 import { useEffect } from 'react';
 import Product from './pages/Product';
+import Terms from './pages/Terms';
+import Privacy from './pages/Privacy';
 
 function ScrollToTopOnMount() {
   const location = useLocation();
@@ -27,6 +29,8 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/product/:id' element={<Product />} />
+        <Route path='/termsandconditions' element={<Terms />} />
+        <Route path='/privacypolicy' element={<Privacy />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
       <Footer />
