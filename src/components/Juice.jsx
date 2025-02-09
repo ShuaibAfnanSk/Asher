@@ -8,13 +8,13 @@ import 'aos/dist/aos.css';
 const Juice = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 2000 })
+        Aos.init({ duration: 1000 })
     }, []);
 
     return (
         <section className="juice-wrapper">
             <div className="ageTitle">
-                <h3 data-aos='fade-up'>Our Juice</h3>
+                <h3 data-aos='fade-up'>Our Juices</h3>
                 <p data-aos='fade-up'>Make your choice</p>
             </div>
             <div className="juice-container">

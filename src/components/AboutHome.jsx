@@ -9,29 +9,34 @@ import 'aos/dist/aos.css';
 const AboutHome = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 2000 })
+        Aos.init({ duration: 1000 })
     }, []);
 
     return (
-        <section className="ah-wrapper">
-            <div className="ah-img">
-                <div className="ah-banner">
-                    <img data-aos='fade-up' src={banner} className="ah-polo" alt="" />
-                    <img data-aos='fade-up' src={products[4].details[0].image} className="ah-fruit" alt="" />
-                </div>
+        <section className="ah-section" id="about">
+            <div className="ageTitle">
+                <h3 data-aos='fade-up'>About Us</h3>
+                <p data-aos='fade-up'>Know our motivation and origin</p>
             </div>
-            <div className="ah-container">
-                <div className="ah-content">
-                    <h4 data-aos='fade-up'>About Asher</h4>
-                    <div data-aos='fade-up' className="ah-box">
-                        <img src={svg} alt="" />
-                        <p>At Asher, we believe it’s never too late to return to what’s right. It’s time to step away from the artificial and embrace the natural. </p>
+            <div className="ah-wrapper">
+                <div className="ah-img">
+                    <div className="ah-banner">
+                        <img data-aos='fade-up' src={banner} className="ah-polo" alt="" />
+                        <img data-aos='fade-up' src={products[4].details[0].image} className="ah-fruit" alt="" />
                     </div>
-                    <div data-aos='fade-up' className="ah-box">
-                        <img src={svg} alt="" />
-                        <p>With every sip of our fresh, pure juices, you’re not just rewarding yourself—you’re choosing a healthier, stronger, and happier you.</p>
+                </div>
+                <div className="ah-container">
+                    <div className="ah-content">
+                        <div data-aos='fade-up' className="ah-box">
+                            <img src={svg} alt="" />
+                            <p>At Asher, we believe it’s never too late to return to what’s right. It’s time to step away from the artificial and embrace the natural. </p>
+                        </div>
+                        <div data-aos='fade-up' className="ah-box">
+                            <img src={svg} alt="" />
+                            <p>With every sip of our fresh, pure juices, you’re not just rewarding yourself—you’re choosing a healthier, stronger, and happier you.</p>
+                        </div>
+                        <Link className="click" to={'/about'}><button style={{fontSize: "14px"}}>Know more</button></Link>
                     </div>
-                    <Link className="click" to={'/about'}><button>Know More</button></Link>
                 </div>
             </div>
         </section>

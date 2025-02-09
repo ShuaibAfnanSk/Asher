@@ -9,7 +9,7 @@ function Contact() {
     const [errorMessage, setErrorMessage] = useState('');
 
     useEffect(() => {
-        Aos.init({ duration: 2000 })
+        Aos.init({ duration: 1000 })
     }, []);
 
     const validateEmail = (email) => {
@@ -40,10 +40,10 @@ function Contact() {
         setErrorMessage('');
     };
     return (
-        <section className='flex flex-col min-h-[50vh] p-8' id='contact'>
-            <div className="flex flex-col items-center justify-center gap-1 mb-5">
-                <h1 data-aos='fade-up' className='text-5xl md:text-6xl text-teal-950 font-extrabold mono-sans'>Contact</h1>
-                <p data-aos='fade-up' className='text-xl font-medium'>Get in Touch</p>
+        <section className='flex flex-col min-h-[50vh] gap-4' id='contact'>
+            <div className='ageTitle'>
+                <h3 data-aos='fade-up'>Contact</h3>
+                <p data-aos='fade-up'>Get in Touch</p>
             </div>
             <div className="flex flex-col lg:flex-row">
                 {/* image */}
@@ -53,10 +53,10 @@ function Contact() {
 
                 {/* Form */}
                 <div className="flex items-center justify-center basis-1/2">
-                    <form action="" onSubmit={sendEmail} className='flex w-full md:w-[80%] flex-col gap-2'>
-                        <input data-aos='fade-up' type="text" name='client_name' placeholder='Name' className='p-4 text-black bg-gray-200 outline-none shadow-sm rounded-2xl' required />
-                        <input data-aos='fade-up' type="email" name='email' placeholder='Email' className='p-4 text-black bg-gray-200 outline-none shadow-sm rounded-2xl' required />
-                        <textarea data-aos='fade-up' name="message" placeholder='your message' id="" cols="30" rows="10" className='p-4 text-black bg-gray-200 outline-none shadow-sm rounded-2xl' />
+                    <form action="" onSubmit={sendEmail} className='contact-form flex w-full md:w-[80%] flex-col gap-2'>
+                        <input data-aos='fade-up' type="text" name='client_name' placeholder='Name' className='p-4 text-black bg-[#fafafa] outline-none shadow-sm rounded-md' required />
+                        <input data-aos='fade-up' type="email" name='email' placeholder='Email' className='p-4 text-black bg-[#fafafa] outline-none shadow-sm rounded-md' required />
+                        <textarea data-aos='fade-up' name="message" placeholder='Your message' id="" cols="30" rows="10" className='p-4 text-black bg-[#fafafa] outline-none shadow-sm rounded-md' />
                         {errorMessage && <div className="text-red-600 text-xl">{errorMessage}</div>}
                         <div className="text-green-600 text-xl">{result ? <Result /> : null}</div>
                         <button data-aos='fade-up' type='submit' className='send-btn flex py-3 items-center justify-center px-4 bg-teal-950 hover:bg-teal-700 text-white rounded-full'>

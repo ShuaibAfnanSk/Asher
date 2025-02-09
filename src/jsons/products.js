@@ -11,115 +11,95 @@ const products = [
             {
                 ingredient: "Pineapple",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pine-apple.png",
-                nutrients: "Vitamin C, Bromelain, Manganese, Potassium, Fiber, Beta-carotene",
-                benefits: {
-                    hair: "Reduces dandruff, strengthens hair, and lowers hair fall",
-                    skin: "Promotes glowing skin, reduces wrinkles, and heals acne",
-                    digestion: "Improves digestion, reduces bloating, and relieves constipation",
-                    energy: "Boosts stamina and reduces fatigue",
-                    other: "Supports fertility"
-                }
-            },
-            {
-                ingredient: "Cucumber",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/cucumber.png",
-                nutrients: "Water, Vitamin K, Potassium, Magnesium, Silica",
-                benefits: {
-                    skin: "Hydrates, soothes irritation, and brightens complexion",
-                    eyes: "Reduces puffiness and dark circles",
-                    kidneys: "Detoxifies and prevents kidney stones",
-                    heart: "Lowers blood pressure and improves circulation"
-                }
+                nutrients: "Vitamin C, Bromelain, Manganese, Potassium, Fiber",
+                benefits: [
+                    "Aids digestion",
+                    "Supports immunity",
+                    "Enhances skin health",
+                    "Reduces inflammation"
+                ]
             },
             {
                 ingredient: "Spinach",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/spinach.png",
-                nutrients: "Iron, Vitamin K, Folate, Magnesium, Calcium, Vitamin A, Vitamin C, Fiber",
-                benefits: {
-                    brain: "Enhances mental focus and reduces cognitive decline",
-                    bones: "Strengthens bones and teeth (high calcium)",
-                    blood: "Improves blood oxygenation (iron)",
-                    immunity: "Boosts defense mechanisms and prevents infections"
-                }
+                nutrients: "Iron, Vitamin K, Folate, Magnesium, Calcium, Vitamin A, Fiber",
+                benefits: [
+                    "Enhances blood health",
+                    "Strengthens bones",
+                    "Boosts immunity"
+                ]
             },
             {
                 ingredient: "Coconut Water",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/coconut.png",
-                nutrients: "Electrolytes, Potassium, Magnesium, Calcium, Vitamin C, Sodium",
-                benefits: {
-                    skin: "Hydrates and reduces signs of aging",
-                    muscles: "Relieves cramps and restores electrolyte balance",
-                    heart: "Lowers cholesterol and regulates blood pressure",
-                    energy: "Refreshes and recharges after physical activity"
-                }
+                nutrients: "Electrolytes, Potassium, Magnesium, Calcium",
+                benefits: [
+                    "Rehydrates",
+                    "Restores electrolytes",
+                    "Supports heart health"
+                ]
             },
             {
-                ingredient: "Lemon",
+                ingredient: "Lime juice",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png",
-                nutrients: "Vitamin C, Citric Acid, Potassium, Flavonoids, Calcium",
-                benefits: {
-                    skin: "Reduces dark spots and acne",
-                    liver: "Detoxifies and promotes healthy liver function",
-                    immunity: "Enhances resistance to colds and flu",
-                    weight: "Supports fat burning and appetite control"
-                }
+                nutrients: "Vitamin C, Citric Acid, Flavonoids, Potassium",
+                benefits: [
+                    "Enhances immunity",
+                    "Supports digestion",
+                    "Promotes radiant skin"
+                ]
             },
             {
                 ingredient: "Chia Seeds",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/chia.png",
-                nutrients: "Omega-3 Fatty Acids, Fiber, Calcium, Magnesium, Zinc, Antioxidants",
-                benefits: {
-                    hair: "Strengthens follicles and reduces breakage",
-                    skin: "Promotes elasticity and reduces dryness",
-                    digestion: "Improves gut health and prevents constipation",
-                    heart: "Lowers cholesterol and improves heart health"
-                }
+                nutrients: "Omega-3 Fatty Acids, Fiber, Magnesium, Calcium",
+                benefits: [
+                    "Improves digestion",
+                    "Supports heart health",
+                    "Provides sustained energy"
+                ]
             },
             {
                 ingredient: "Ginger",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/ginger.png",
-                nutrients: "Gingerol, Vitamin B6, Magnesium, Potassium, Zinc",
-                benefits: {
-                    brain: "Enhances memory and focus",
-                    digestion: "Relieves nausea and improves digestion",
-                    joints: "Reduces inflammation and pain",
-                    immunity: "Fights infections and strengthens the immune system"
-                }
+                nutrients: "Gingerol, Vitamin B6, Magnesium, Potassium",
+                benefits: [
+                    "Reduces inflammation",
+                    "Aids digestion",
+                    "Supports immunity"
+                ]
             },
             {
-                ingredient: "Pudina (Mint)",
+                ingredient: "Mint (Pudina)",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pudina.png",
-                nutrients: "Menthol, Vitamin A, Vitamin C, Iron, Magnesium",
-                benefits: {
-                    breath: "Freshens breath and reduces bad odor",
-                    stomach: "Soothes indigestion and prevents bloating",
-                    skin: "Calms irritation and acne",
-                    mind: "Improves focus and reduces stress"
-                }
+                nutrients: "Menthol, Vitamin A, Vitamin C, Iron",
+                benefits: [
+                    "Freshens breath",
+                    "Soothes digestion",
+                    "Reduces stress"
+                ]
             },
             {
                 ingredient: "Turmeric",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/turmeric.png",
-                nutrients: "Curcumin, Vitamin C, Potassium, Magnesium, Iron",
-                benefits: {
-                    skin: "Reduces acne scars and brightens complexion",
-                    joints: "Alleviates arthritis and inflammation",
-                    immunity: "Strengthens the immune system and fights infections",
-                    liver: "Promotes detoxification"
-                }
+                nutrients: "Curcumin, Potassium, Magnesium, Iron",
+                benefits: [
+                    "Supports joint health",
+                    "Boosts immunity",
+                    "Has anti-inflammatory properties"
+                ]
             },
             {
                 ingredient: "Black Salt",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/blacksalt.png",
-                nutrients: "Sodium, Potassium, Magnesium, Iron, Sulfur",
-                benefits: {
-                    digestion: "Enhances metabolism and reduces gas",
-                    skin: "Detoxifies and balances oil production",
-                    electrolytes: "Replenishes salts after sweating"
-                }
+                nutrients: "Sodium, Potassium, Magnesium",
+                benefits: [
+                    "Aids digestion",
+                    "Balances electrolytes",
+                    "Prevents bloating"
+                ]
             }
         ],
-
         bodyReaction: [
             {
                 duration: "1-3 Days",
@@ -297,78 +277,77 @@ const products = [
         fruit: "Watermelon",
         name: "Watermelon Bliss",
         image: "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c68df5e94bdf6d8d08d_1.png",
-
         details: [
             {
                 ingredient: "Watermelon",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/watermelon.png",
                 nutrients: "Vitamin A, Vitamin C, Lycopene, Potassium, Magnesium",
-                benefits: {
-                    skin: "Hydrates, reduces sun damage, and promotes a radiant glow",
-                    heart: "Reduces blood pressure and improves circulation",
-                    muscles: "Relieves soreness post-exercise",
-                    digestion: "Enhances hydration and prevents constipation"
-                }
+                benefits: [
+                    "Hydrates the body",
+                    "Supports heart health",
+                    "Aids muscle recovery",
+                    "Promotes digestion"
+                ]
             },
             {
                 ingredient: "Cucumber",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/cucumber.png",
-                nutrients: "Water, Vitamin K, Potassium, Magnesium, Silica",
-                benefits: {
-                    skin: "Hydrates and soothes irritation",
-                    kidneys: "Prevents stones and detoxifies",
-                    heart: "Lowers blood pressure"
-                }
+                nutrients: "Water, Vitamin K, Potassium, Magnesium",
+                benefits: [
+                    "Provides hydration",
+                    "Supports kidney health",
+                    "May help regulate blood pressure"
+                ]
             },
             {
-                ingredient: "Lemon",
+                ingredient: "Lime juice",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png",
                 nutrients: "Vitamin C, Citric Acid, Potassium, Flavonoids",
-                benefits: {
-                    immunity: "Fights colds and flu",
-                    skin: "Brightens complexion and reduces blemishes",
-                    liver: "Supports detoxification"
-                }
-            },
-            {
-                ingredient: "Chia Seeds",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/chia.png",
-                nutrients: "Omega-3 Fatty Acids, Fiber, Calcium, Magnesium, Zinc, Antioxidants",
-                benefits: {
-                    hair: "Reduces breakage and strengthens roots",
-                    skin: "Improves elasticity",
-                    digestion: "Promotes gut health"
-                }
+                benefits: [
+                    "Supports immunity",
+                    "Enhances skin brightness",
+                    "Aids digestion"
+                ]
             },
             {
                 ingredient: "Ginger",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/ginger.png",
                 nutrients: "Gingerol, Vitamin B6, Magnesium, Potassium",
-                benefits: {
-                    digestion: "Relieves nausea and boosts digestion",
-                    joints: "Reduces inflammation",
-                    immunity: "Fights infections"
-                }
+                benefits: [
+                    "Reduces inflammation",
+                    "Aids digestion",
+                    "Strengthens immunity"
+                ]
             },
             {
-                ingredient: "Pudina (Mint)",
+                ingredient: "Mint (Pudina)",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pudina.png",
                 nutrients: "Menthol, Vitamin A, Vitamin C, Iron",
-                benefits: {
-                    breath: "Freshens and reduces bad odor",
-                    stomach: "Soothes indigestion",
-                    skin: "Calms irritation"
-                }
+                benefits: [
+                    "Soothes digestion",
+                    "Refreshes breath",
+                    "May reduce stress"
+                ]
             },
             {
                 ingredient: "Turmeric",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/turmeric.png",
-                nutrients: "Curcumin, Vitamin C, Potassium, Iron",
-                benefits: {
-                    skin: "Reduces acne scars and enhances glow",
-                    joints: "Relieves inflammation",
-                    immunity: "Strengthens defense mechanisms"
-                }
+                nutrients: "Curcumin, Potassium, Iron",
+                benefits: [
+                    "Supports joint health",
+                    "Strengthens immunity",
+                    "Has anti-inflammatory properties"
+                ]
+            },
+            {
+                ingredient: "Chia Seeds",
+                nutrients: "Omega-3s, Fiber, Protein, Iron, Calcium",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/chia.png",
+                benefits: [
+                    "Aids digestion",
+                    "Supports weight loss",
+                    "Regulates blood sugar"
+                ]
             }
         ],
 
@@ -542,66 +521,83 @@ const products = [
         fruit: "Ginger",
         name: "Ginger Shots",
         image: "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6ca2f291522ffd0d37_2.png",
-
         details: [
             {
                 ingredient: "Ginger",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/ginger.png",
                 nutrients: "Gingerol, Vitamin B6, Magnesium, Potassium, Zinc",
-                benefits: {
-                    combined: "Boosts immunity, reduces inflammation, aids digestion, relieves nausea, and enhances focus."
-                }
+                benefits: [
+                    "Supports immunity",
+                    "Reduces inflammation",
+                    "Aids digestion",
+                    "Relieves nausea",
+                    "Enhances cognitive function"
+                ]
             },
             {
-                ingredient: "Lemon",
+                ingredient: "Lime juice",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png",
                 nutrients: "Vitamin C, Citric Acid, Potassium, Flavonoids",
-                benefits: {
-                    combined: "Detoxifies the body, improves skin health, enhances immunity, and supports weight management."
-                }
+                benefits: [
+                    "Supports liver detoxification",
+                    "Supports skin health",
+                    "Boosts immunity",
+                    "Aids digestion"
+                ]
             },
             {
                 ingredient: "Coconut Water",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/coconut.png",
-                nutrients: "Electrolytes, Potassium, Magnesium, Calcium, Vitamin C",
-                benefits: {
-                    combined: "Rehydrates, replenishes electrolytes, lowers blood pressure, and refreshes after activity."
-                }
-            },
-            {
-                ingredient: "Normal Water",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/water.png",
-                nutrients: "Essential Hydration",
-                benefits: {
-                    combined: "Maintains overall hydration, supports body functions, and aids nutrient absorption."
-                }
+                nutrients: "Electrolytes (Potassium, Magnesium, Calcium), Vitamin C",
+                benefits: [
+                    "Hydrates",
+                    "Replenishes electrolytes",
+                    "Supports heart health",
+                    "Aids post-exercise recovery"
+                ]
             },
             {
                 ingredient: "Honey",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/honey.png",
                 nutrients: "Antioxidants, Natural Sugars, Vitamins, Minerals",
-                benefits: {
-                    combined: "Provides natural energy, soothes the throat, supports immunity, and acts as an antibacterial."
-                }
+                benefits: [
+                    "Provides natural energy",
+                    "Soothes the throat",
+                    "Supports immunity",
+                    "Has antibacterial properties"
+                ]
             },
             {
                 ingredient: "Turmeric",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/turmeric.png",
                 nutrients: "Curcumin, Vitamin C, Potassium, Magnesium, Iron",
-                benefits: {
-                    combined: "Reduces inflammation, detoxifies the liver, and enhances skin health."
-                }
+                benefits: [
+                    "Reduces inflammation",
+                    "Supports liver detoxification",
+                    "Promotes joint health"
+                ]
             },
             {
                 ingredient: "Black Pepper",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/blacksalt.png",
                 nutrients: "Piperine, Iron, Manganese, Potassium, Vitamin K",
-                benefits: {
-                    combined: "Enhances nutrient absorption, boosts metabolism, and supports digestion."
-                }
+                benefits: [
+                    "Enhances nutrient absorption (especially curcumin)",
+                    "Boosts metabolism",
+                    "Aids digestion"
+                ]
+            },
+            {
+                ingredient: "Water",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/water.png",
+                nutrients: "Essential Hydration",
+                benefits: [
+                    "Maintains fluid balance",
+                    "Supports digestion",
+                    "Aids nutrient absorption"
+                ]
             }
         ],
-
         bodyReaction: [
             {
                 duration: "1-3 Days",
@@ -764,71 +760,86 @@ const products = [
         fruit: "Grapeberry",
         name: "GrapeBerry Delight",
         image: "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af8b39bf98e4cbfe35b6f6_Untitled%20design%20(12)%20(1).png",
-
         details: [
             {
                 ingredient: "Black Grapes",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/grapes.png",
                 nutrients: "Resveratrol, Vitamin C, Vitamin K, Potassium, Antioxidants",
-                benefits: {
-                    combined: "Promotes heart health, boosts skin radiance, and reduces inflammation."
-                }
+                benefits: [
+                    "Supports heart health",
+                    "Improves skin health",
+                    "Reduces inflammation"
+                ]
             },
             {
                 ingredient: "Blueberries",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/blueberries.png",
                 nutrients: "Anthocyanins, Vitamin C, Vitamin K, Fiber, Antioxidants",
-                benefits: {
-                    combined: "Enhances brain health, supports vision, and boosts immunity."
-                }
+                benefits: [
+                    "Enhances brain function",
+                    "Supports eye health",
+                    "Strengthens immunity"
+                ]
             },
             {
                 ingredient: "Lime Juice",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/limejuice.png",
                 nutrients: "Vitamin C, Citric Acid, Flavonoids, Potassium",
-                benefits: {
-                    combined: "Detoxifies, improves digestion, and enhances skin clarity."
-                }
+                benefits: [
+                    "Aids digestion",
+                    "Supports liver detoxification",
+                    "Promotes skin clarity"
+                ]
             },
             {
                 ingredient: "Ginger",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/ginger.png",
                 nutrients: "Gingerol, Magnesium, Potassium, Vitamin B6",
-                benefits: {
-                    combined: "Reduces inflammation, boosts immunity, and aids digestion."
-                }
+                benefits: [
+                    "Reduces inflammation",
+                    "Supports digestion",
+                    "Boosts immunity"
+                ]
             },
             {
-                ingredient: "Pudina (Mint)",
+                ingredient: "Mint (Pudina)",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pudina.png",
                 nutrients: "Menthol, Vitamin A, Vitamin C, Iron",
-                benefits: {
-                    combined: "Freshens breath, soothes digestion, and reduces stress."
-                }
+                benefits: [
+                    "Freshens breath",
+                    "Aids digestion",
+                    "Has a calming effect"
+                ]
             },
             {
                 ingredient: "Chia Seeds",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/chia.png",
                 nutrients: "Omega-3 Fatty Acids, Fiber, Calcium, Magnesium",
-                benefits: {
-                    combined: "Improves heart health, strengthens hair, and enhances gut health."
-                }
+                benefits: [
+                    "Supports heart health",
+                    "Promotes digestive health",
+                    "Boosts energy"
+                ]
             },
             {
                 ingredient: "Black Salt",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/blacksalt.png",
                 nutrients: "Sodium, Potassium, Iron, Magnesium, Sulfur",
-                benefits: {
-                    combined: "Balances electrolytes, improves metabolism, and aids digestion."
-                }
+                benefits: [
+                    "Balances electrolytes",
+                    "Aids digestion",
+                    "Supports hydration"
+                ]
             },
             {
                 ingredient: "Cinnamon Powder",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/cinnamon.png",
                 nutrients: "Cinnamaldehyde, Calcium, Iron, Antioxidants",
-                benefits: {
-                    combined: "Stabilizes blood sugar levels, enhances flavor, and boosts immunity."
-                }
+                benefits: [
+                    "Helps regulate blood sugar",
+                    "Adds natural flavor",
+                    "Supports immunity"
+                ]
             }
         ],
 
@@ -998,79 +1009,96 @@ const products = [
         name: "Orange Glow",
         fruit: "Orange",
         image: "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c97372d85d43ff3c13f_1%20(1).png",
-
         details: [
             {
                 ingredient: "Fresh Oranges",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/Orange.png",
                 nutrients: "Vitamin C, Folate, Potassium, Fiber",
-                benefits: {
-                    combined: "Boosts immunity, enhances skin glow, and supports heart health."
-                }
+                benefits: [
+                    "Strengthens immunity",
+                    "Promotes skin health",
+                    "Supports heart function"
+                ]
             },
             {
                 ingredient: "Carrot",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/carrot.png",
                 nutrients: "Beta-Carotene, Vitamin A, Fiber, Potassium",
-                benefits: {
-                    combined: "Improves vision, promotes radiant skin, and supports healthy digestion."
-                }
+                benefits: [
+                    "Supports eye health",
+                    "Enhances skin glow",
+                    "Aids digestion"
+                ]
             },
             {
                 ingredient: "Ginger",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/ginger.png",
                 nutrients: "Gingerol, Magnesium, Vitamin B6, Potassium",
-                benefits: {
-                    combined: "Fights inflammation, boosts metabolism, and supports immunity."
-                }
+                benefits: [
+                    "Reduces inflammation",
+                    "Supports digestion",
+                    "Boosts immunity"
+                ]
             },
             {
-                ingredient: "Lemon",
+                ingredient: "Lime juice",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png",
                 nutrients: "Vitamin C, Citric Acid, Flavonoids, Potassium",
-                benefits: {
-                    combined: "Detoxifies, enhances digestion, and supports glowing skin."
-                }
+                benefits: [
+                    "Supports liver detoxification",
+                    "Improves digestion",
+                    "Promotes skin health"
+                ]
             },
             {
                 ingredient: "Turmeric",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/turmeric.png",
                 nutrients: "Curcumin, Potassium, Vitamin C, Magnesium",
-                benefits: {
-                    combined: "Reduces inflammation, promotes clear skin, and supports joint health."
-                }
+                benefits: [
+                    "Reduces inflammation",
+                    "Supports joint health",
+                    "Boosts antioxidant levels"
+                ]
             },
             {
                 ingredient: "Cinnamon",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/cinnamon.png",
                 nutrients: "Cinnamaldehyde, Calcium, Iron, Antioxidants",
-                benefits: {
-                    combined: "Stabilizes blood sugar levels, boosts immunity, and adds a warming flavor."
-                }
+                benefits: [
+                    "Helps regulate blood sugar",
+                    "Supports immunity",
+                    "Adds natural warmth and flavor"
+                ]
             },
             {
                 ingredient: "Chia Seeds",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/chia.png",
                 nutrients: "Omega-3 Fatty Acids, Fiber, Calcium, Magnesium",
-                benefits: {
-                    combined: "Supports digestion, boosts heart health, and improves hair and skin."
-                }
+                benefits: [
+                    "Supports digestive health",
+                    "Promotes heart health",
+                    "Nourishes skin and hair"
+                ]
             },
             {
-                ingredient: "Mint Leaves",
+                ingredient: "Mint (Pudina)",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pudina.png",
                 nutrients: "Menthol, Vitamin A, Vitamin C, Iron",
-                benefits: {
-                    combined: "Soothes digestion, refreshes breath, and reduces stress."
-                }
+                benefits: [
+                    "Aids digestion",
+                    "Freshens breath",
+                    "Has a calming effect"
+                ]
             },
             {
                 ingredient: "Black Pepper",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/blacksalt.png",
                 nutrients: "Piperine, Iron, Potassium, Magnesium",
-                benefits: {
-                    combined: "Enhances curcumin absorption, boosts metabolism, and supports gut health."
-                }
+                benefits: [
+                    "Enhances nutrient absorption (especially curcumin)",
+                    "Supports metabolism",
+                    "Aids digestion"
+                ]
             }
         ],
 
@@ -1236,114 +1264,128 @@ const products = [
         fruit: "Apple",
         name: "ABC Power Punch",
         image: "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6fd0a17b480f1da3bb_3.png",
-
         details: [
             {
                 ingredient: "Apple",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/apple.png",
                 nutrients: "Fiber, Vitamin C, Potassium, Antioxidants",
-                benefits: {
-                    combined: "Supports digestion, boosts immunity, and promotes heart health."
-                }
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/apple.png",
+                benefits: [
+                    "Supports digestion",
+                    "Boosts immunity",
+                    "Promotes heart health"
+                ]
             },
             {
                 ingredient: "Beetroot",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/beetroot.png",
                 nutrients: "Nitrates, Iron, Folate, Vitamin C",
-                benefits: {
-                    combined: "Improves blood circulation, supports liver health, and boosts stamina."
-                }
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/beetroot.png",
+                benefits: [
+                    "Enhances blood circulation",
+                    "Supports liver function",
+                    "Boosts stamina"
+                ]
             },
             {
-                ingredient: "Carrot",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/carrot.png",
+                ingredient: "Carrot",
                 nutrients: "Beta-Carotene, Vitamin A, Fiber, Potassium",
-                benefits: {
-                    combined: "Enhances vision, promotes glowing skin, and supports immunity."
-                }
+                benefits: [
+                    "Supports eye health",
+                    "Enhances skin glow",
+                    "Strengthens immunity"
+                ]
             },
             {
                 ingredient: "Chia Seeds",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/chia.png",
                 nutrients: "Omega-3 Fatty Acids, Fiber, Calcium, Magnesium",
-                benefits: {
-                    combined: "Supports digestion, heart health, and boosts energy levels."
-                }
+                benefits: [
+                    "Supports digestion",
+                    "Promotes heart health",
+                    "Boosts energy levels"
+                ]
             },
             {
                 ingredient: "Ground Flaxseeds",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/flaxseeds.png",
                 nutrients: "Omega-3 Fatty Acids, Lignans, Fiber, Vitamin B1",
-                benefits: {
-                    combined: "Reduces inflammation, improves heart health, and supports hormonal balance."
-                }
+                benefits: [
+                    "Reduces inflammation",
+                    "Supports heart health",
+                    "Aids hormonal balance"
+                ]
             },
             {
                 ingredient: "Spinach",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/spinach.png",
                 nutrients: "Iron, Vitamin K, Folate, Magnesium, Calcium",
-                benefits: {
-                    combined: "Boosts energy, supports bone health, and strengthens immunity."
-                }
+                benefits: [
+                    "Boosts energy",
+                    "Strengthens bones",
+                    "Supports immunity"
+                ]
             },
             {
                 ingredient: "Ginger",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/ginger.png",
                 nutrients: "Gingerol, Vitamin B6, Magnesium, Potassium",
-                benefits: {
-                    combined: "Fights inflammation, improves digestion, and boosts metabolism."
-                }
+                benefits: [
+                    "Reduces inflammation",
+                    "Aids digestion",
+                    "Boosts metabolism"
+                ]
             },
             {
-                ingredient: "Lemon",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png",
+                ingredient: "Lime juice",
                 nutrients: "Vitamin C, Citric Acid, Flavonoids",
-                benefits: {
-                    combined: "Detoxifies the body, supports glowing skin, and enhances digestion."
-                }
-            },
-            {
-                ingredient: "Honey (or Maple Syrup)",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/honey.png",
-                nutrients: "Antioxidants, Natural Sugars",
-                benefits: {
-                    combined: "Provides natural sweetness, boosts energy, and supports immunity."
-                }
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png",
+                benefits: [
+                    "Supports liver detoxification",
+                    "Improves digestion",
+                    "Promotes skin health"
+                ]
             },
             {
                 ingredient: "Cinnamon",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/cinnamon.png",
                 nutrients: "Cinnamaldehyde, Antioxidants, Calcium",
-                benefits: {
-                    combined: "Stabilizes blood sugar, improves circulation, and boosts immunity."
-                }
+                benefits: [
+                    "Helps regulate blood sugar",
+                    "Improves circulation",
+                    "Supports immunity"
+                ]
             },
             {
                 ingredient: "Turmeric",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/turmeric.png",
                 nutrients: "Curcumin, Potassium, Vitamin C",
-                benefits: {
-                    combined: "Reduces inflammation, supports joint health, and brightens skin."
-                }
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/turmeric.png",
+                benefits: [
+                    "Reduces inflammation",
+                    "Supports joint health",
+                    "Has antioxidant properties"
+                ]
             },
             {
-                ingredient: "Mint Leaves",
+                ingredient: "Mint (Pudina)",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pudina.png",
                 nutrients: "Menthol, Vitamin A, Iron",
-                benefits: {
-                    combined: "Soothes digestion, freshens breath, and reduces stress."
-                }
+                benefits: [
+                    "Aids digestion",
+                    "Freshens breath",
+                    "Provides a calming effect"
+                ]
             },
             {
                 ingredient: "Black Pepper",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/blacksalt.png",
                 nutrients: "Piperine, Iron, Potassium",
-                benefits: {
-                    combined: "Enhances curcumin absorption, boosts metabolism, and aids digestion."
-                }
+                benefits: [
+                    "Enhances nutrient absorption (especially curcumin)",
+                    "Supports metabolism",
+                    "Aids digestion"
+                ]
             }
         ],
-
         bodyReaction: [
             {
                 duration: "1-3 Days",

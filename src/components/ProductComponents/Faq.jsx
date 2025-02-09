@@ -9,9 +9,9 @@ const Faq = ({ product }) => {
     }
 
     return (
-        <section className="faq-section">
+        <section id='faq' className="faq-section">
             <div className="ageTitle">
-                <h3>FAQ'S</h3>
+                <h3>Faq's</h3>
                 <p>Frequently Asked Questions</p>
             </div>
             <div className="faq-tail">

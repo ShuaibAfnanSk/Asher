@@ -2,10 +2,10 @@ import Cards from "./Cards";
 import body from "../../assets/body.png";
 import clock from "../../assets/clock.png";
 
-const Reaction = ({product}) => {
+const Reaction = ({ product }) => {
 
     return (
-        <section className="reaction-wrapper">
+        <section id="reaction" className="reaction-wrapper">
             <div className="reaction-container">
                 <div className="reaction-img">
                     <img src={product.image} alt="" />

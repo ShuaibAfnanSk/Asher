@@ -6,7 +6,7 @@ import Expert from "./Expert";
 
 
 const LanguageBox = styled.div`
-    transform: translatex(${props => props.swiper * -350}px);
+    transform: translatex(${props => props.swiper * -340}px);
     transition: all .3s ease-in;
 `
 
@@ -24,7 +24,7 @@ const AgeCriteria = ({ product }) => {
     }
 
     return (
-        <section className="ageWrapper">
+        <section id='age' className="ageWrapper">
             <div className="ageTitle">
                 <h3>Age Criteria</h3>
                 <p>Know the Age Criteria for Consumption</p>

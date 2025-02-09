@@ -11,7 +11,7 @@ import { useEffect } from "react";
 const Story = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 2000 })
+        Aos.init({ duration: 1000 })
     }, []);
 
     return (
@@ -20,6 +20,9 @@ const Story = () => {
                 <video className="about-banner" autoPlay loop muted playsInline>
                     <source src={video} type="video/mp4" />
                 </video>
+                <div className='about-svg'>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 300"><path fill="#fafafa" fill-opacity="1" d="M0,32L48,69.3C96,107,192,181,288,218.7C384,256,480,256,576,224C672,192,768,128,864,106.7C960,85,1056,107,1152,112C1248,117,1344,107,1392,101.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+                </div>
                 <h4 data-aos='fade-up'>Rediscover Nature, Rediscover Yourself</h4>
             </div>
             <div className="story-container">

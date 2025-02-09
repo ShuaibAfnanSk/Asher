@@ -13,7 +13,7 @@ const Ingredients = ({ product }) => {
     };
 
     return (
-        <section style={{ backgroundColor: product.color }} className="ingredient-section">
+        <section style={{ backgroundColor: product.color }} id="ingredients" className="ingredient-section">
             <Marquee product={product} />
             <div className="ingredient-wrapper">
                 <div className="ingredient-container">
@@ -29,10 +29,11 @@ const Ingredients = ({ product }) => {
                             </div>
                             <div className="ingredient-back">
                                 <div className="benefits">
-                                    {Object.entries(d.benefits).map(([key, value]) => (
-                                        <p key={key}>
-                                            <span>{key.charAt(0).toUpperCase() + key.slice(1)}:</span> {value}
-                                        </p>
+                                    {d.benefits.map((b, id) => (
+                                        <div key={id} className="benefit">
+                                            <span></span>
+                                            <p>{b}</p>
+                                        </div>
                                     ))}
                                 </div>
                                 <button className="rotate-back" style={{ color: product.color }} onClick={() => handleFlip(d.ingredient)}>

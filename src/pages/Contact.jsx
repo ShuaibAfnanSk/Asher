@@ -3,14 +3,14 @@ import emailjs from 'emailjs-com';
 import contactImg from '../assets/images/contact-us.svg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import Navbar from '../components/Navbar/Navbar';
+import NavbarContact from '../components/Navbar/NavbarContact';
 
 function Contact() {
   const [result, showResult] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
 
   useEffect(() => {
-    Aos.init({ duration: 2000 })
+    Aos.init({ duration: 1000 })
   }, []);
 
   const validateEmail = (email) => {
@@ -42,13 +42,13 @@ function Contact() {
   };
   return (
     <>
-      <Navbar />
-      <section className='min-h-[100vh] px-6' id='contact'>
-        <div className="flex flex-col gap-1">
-          <h1 className='text-xl font-semibold mt-24'>Contact</h1>
-          <p className='text-4xl text-teal-950 font-bold mono-sans'>Get in Touch</p>
+      <NavbarContact />
+      <section className='flex flex-col justify-center min-h-[100vh] gap-8 w-full contact'>
+        <div className='ageTitle'>
+          <h3 data-aos='fade-up'>Contact</h3>
+          <p data-aos='fade-up'>Get in Touch</p>
         </div>
-        <div className="flex flex-col lg:flex-row mt-2">
+        <div className="flex flex-col lg:flex-row">
           {/* image */}
           <div data-aos='fade-up' className="flex items-center justify-center basis-1/2">
             <img src={contactImg} alt="Contact Image" className='w-[70%]' />
@@ -56,18 +56,17 @@ function Contact() {
 
           {/* Form */}
           <div className="flex items-center justify-center basis-1/2">
-            <form action="" onSubmit={sendEmail} className='flex w-full md:w-[80%] flex-col gap-2'>
-              <input data-aos='fade-up' type="text" name='client_name' placeholder='Name' className='p-4 text-black bg-gray-200 outline-none shadow-sm rounded-2xl' required />
-              <input data-aos='fade-up' type="email" name='email' placeholder='Email' className='p-4 text-black bg-gray-200 outline-none shadow-sm rounded-2xl' required />
-              <textarea data-aos='fade-up' name="message" placeholder='your message' id="" cols="30" rows="10" className='p-4 text-black bg-gray-200 outline-none shadow-sm rounded-2xl' />
+            <form action="" onSubmit={sendEmail} className='contact-form flex w-full md:w-[80%] flex-col gap-2'>
+              <input data-aos='fade-up' type="text" name='client_name' placeholder='Name' className='p-4 text-black bg-[#fafafa] outline-none shadow-sm rounded-md' required />
+              <input data-aos='fade-up' type="email" name='email' placeholder='Email' className='p-4 text-black bg-[#fafafa] outline-none shadow-sm rounded-md' required />
+              <textarea data-aos='fade-up' name="message" placeholder='Your message' id="" cols="30" rows="10" className='p-4 text-black bg-[#fafafa] outline-none shadow-sm rounded-md' />
               {errorMessage && <div className="text-red-600 text-xl">{errorMessage}</div>}
               <div className="text-green-600 text-xl">{result ? <Result /> : null}</div>
-              <button data-aos='fade-up' type='submit' className='send-btn flex py-3 mb-2 items-center justify-center px-4 bg-teal-950 hover:bg-teal-700 text-white rounded-full'>
+              <button data-aos='fade-up' type='submit' className='send-btn flex py-3 items-center justify-center px-4 bg-teal-950 hover:bg-teal-700 text-white rounded-full'>
                 Send Now
               </button>
             </form>
           </div>
-          <div className="flex min-h-10"></div>
         </div>
       </section>
     </>

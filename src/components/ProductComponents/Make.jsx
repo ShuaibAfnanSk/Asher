@@ -16,17 +16,19 @@ import { useEffect } from "react";
 const Make = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 2000 })
+        Aos.init({ duration: 1000 })
     }, []);
 
     return (
         <section className="about-make">
             <div className="make-wrapper">
                 <div className="drink-image">
-                    <img data-aos='fade-up' src={drink} alt="" />
+                    <img src={drink} alt="" />
                 </div>
                 <div className="make-container">
-                    <h3 data-aos='fade-up'>What Makes Us Different?</h3>
+                    <div className='ageTitle'>
+                        <h3 data-aos='fade-up'>What Makes Us Different?</h3>
+                    </div>
                     <div data-aos='fade-up' className="make-box">
                         <img src={juice} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
@@ -104,7 +106,9 @@ const Make = () => {
                             <p>We care about the planet as much as we care about your health. That’s why we use reusable glass bottles, contributing to a greener, more sustainable future.</p>
                         </div>
                     </div>
+                    <div className='ageTitle'>
                     <h3 data-aos='fade-up'>Our Primary Focus</h3>
+                    </div>
                     <div data-aos='fade-up' className="make-box">
                         <img src={health} alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>

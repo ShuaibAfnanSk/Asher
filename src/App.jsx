@@ -4,38 +4,75 @@ import Contact from './pages/Contact';
 import PageNotFound from './pages/PageNotFound';
 import Footer from './components/Footer/Footer';
 import Home from './pages/Home';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Product from './pages/Product';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
+import orange from './assets/orange.png'
 
 function ScrollToTopOnMount() {
-  const location = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [location]);
+    if (!hash) {
+      window.scrollTo(0, 0);
+    }
+  }, [pathname]);
 
   return null;
 }
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const [animateOut, setAnimateOut] = useState(false);
+
+  useEffect(() => {
+    const handleLoad = () => {
+      setTimeout(() => {
+        setAnimateOut(true);
+        setTimeout(() => {
+          setLoading(false);
+        }, 800);
+      }, 500);
+    };
+
+    if (document.readyState === "complete") {
+      handleLoad();
+    } else {
+      window.addEventListener("load", handleLoad);
+    }
+
+    return () => window.removeEventListener("load", handleLoad);
+  }, []);
 
   return (
     <BrowserRouter>
       <ScrollToTopOnMount />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/product/:id' element={<Product />} />
-        <Route path='/termsandconditions' element={<Terms />} />
-        <Route path='/privacypolicy' element={<Privacy />} />
-        <Route path='*' element={<PageNotFound />} />
-      </Routes>
-      <Footer />
+
+      {/* Loader */}
+      {loading && (
+        <div className={`loader-container ${animateOut ? "move-up" : ""}`}>
+          <div className="spinner">
+            <img src={orange} alt="" />
+          </div>
+        </div>
+      )}
+
+      {/* Routes */}
+      <div className={`${loading ? "hidden" : "block"}`}>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/product/:id' element={<Product />} />
+          <Route path='/termsandconditions' element={<Terms />} />
+          <Route path='/privacypolicy' element={<Privacy />} />
+          <Route path='*' element={<PageNotFound />} />
+        </Routes>
+        <Footer />
+      </div>
     </BrowserRouter>
-  )
+  );
 }
 
 export default App;

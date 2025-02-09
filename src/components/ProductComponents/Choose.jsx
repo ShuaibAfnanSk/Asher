@@ -6,7 +6,7 @@ import { useEffect } from "react";
 const Choose = () => {
 
     useEffect(() => {
-        Aos.init({ duration: 2000 })
+        Aos.init({ duration: 1000 })
     }, []);
 
     return (
