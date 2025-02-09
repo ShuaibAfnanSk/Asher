@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import Product from './pages/Product';
 import Terms from './pages/Terms';
 import Privacy from './pages/Privacy';
-import orange from './assets/orange.png'
+import orange from './assets/loader.png'
 
 function ScrollToTopOnMount() {
   const { pathname, hash } = useLocation();
