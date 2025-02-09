@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Marquee from "./Marquee";
+import Aos from "aos";
 
 const Ingredients = ({ product }) => {
 
@@ -12,19 +13,23 @@ const Ingredients = ({ product }) => {
         }));
     };
 
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
+
     return (
         <section style={{ backgroundColor: product.color }} id="ingredients" className="ingredient-section">
             <Marquee product={product} />
             <div className="ingredient-wrapper">
                 <div className="ingredient-container">
                     {product.details.map((d) => (
-                        <div className={`ingredient ${flippedStates[d.ingredient] ? "flipped" : ""}`}>
+                        <div data-aos='fade-up' className={`ingredient ${flippedStates[d.ingredient] ? "flipped" : ""}`}>
                             <div className="ingredient-front">
                                 <img src={d.image} alt="" />
                                 <h4>{d.ingredient}</h4>
                                 <div className="ingredient-stamp">
                                     <p>{d.nutrients}</p>
-                                    <button style={{ color: product.color }} onClick={() => handleFlip(d.ingredient)}>See Benefits</button>
+                                    <button onClick={() => handleFlip(d.ingredient)}>See Benefits</button>
                                 </div>
                             </div>
                             <div className="ingredient-back">
@@ -36,7 +41,7 @@ const Ingredients = ({ product }) => {
                                         </div>
                                     ))}
                                 </div>
-                                <button className="rotate-back" style={{ color: product.color }} onClick={() => handleFlip(d.ingredient)}>
+                                <button className="rotate-back" onClick={() => handleFlip(d.ingredient)}>
                                     Go Back
                                 </button>
                             </div>

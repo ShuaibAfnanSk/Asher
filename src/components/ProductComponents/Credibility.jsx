@@ -1,6 +1,12 @@
+import Aos from 'aos';
 import source from '../../assets/source.png';
+import { useEffect } from 'react';
 
 const Credibility = ({ product }) => {
+
+     useEffect(() => {
+            Aos.init({ duration: 1000 })
+        }, []);
 
     return (
         <section className="faq-section">
@@ -10,7 +16,7 @@ const Credibility = ({ product }) => {
             </div>
             <div className="faq-tail">
                 {product.sourceCredibility.map((f, id) => (
-                    <div key={id} className="faq-box">
+                    <div data-aos='fade-up' key={id} className="faq-box">
                         <div className="faq-block cred-block"><p>{f}</p><img src={source} alt="" /></div>
                     </div>
                 ))}

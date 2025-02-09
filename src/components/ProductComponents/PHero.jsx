@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import wavy from "../../assets/wavy.png";
 import usp from "../../jsons/usp";
 import NavbarProduct from "../Navbar/NavbarProduct";
+import Aos from "aos";
 
 const PHero = ({ product }) => {
 
@@ -15,6 +16,10 @@ const PHero = ({ product }) => {
         setShowPopup(false);
     };
 
+    useEffect(() => {
+        Aos.init({ duration: 1000 })
+    }, []);
+
     return (
         <>
             <NavbarProduct />
@@ -26,9 +31,9 @@ const PHero = ({ product }) => {
                     <img src={product.details[0].image} alt="" />
                 </div>
                 <h3 className="product-name">{product.fruit}</h3>
-                <div className="product-title" style={{ '--circle': product.color }}>
+                <div data-aos='fade-right' className="product-title" style={{ '--circle': product.color }}>
                     <h4 style={{ color: product.color }}><i className="ph ph-brandy"></i> - {product.name}</h4>
-                    <p>"{product.tagline}"</p>
+                    <p className="product-taste">"{product.taste}"</p>
                     <div className="product-stamps">
                         {usp.slice(1, 4).map((u) => (
                             <div className="product-stamp">
@@ -45,8 +50,8 @@ const PHero = ({ product }) => {
                         <img className="popup-fruit" src={product.details[0].image} alt="" />
                         <img src={product.image} className="popup-drink" alt="" />
                         <h4>Welcome to Asher Drinks</h4>
-                        <p>Thanks for buying Asher Drink <span style={{color: product.color, textDecoration: "underline"}}>{product.name}</span>, You have successfully unlocked your rewards.</p>
-                        <button onClick={closePopup} style={{backgroundColor: product.color}}><i className="ph ph-x"></i></button>
+                        <p>Thanks for buying Asher Drink <span style={{ color: product.color, textDecoration: "underline" }}>{product.name}</span>, You have successfully unlocked your rewards.</p>
+                        <button onClick={closePopup} style={{ backgroundColor: product.color }}><i className="ph ph-x"></i></button>
                     </div>
                 </div>
             )}

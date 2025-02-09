@@ -1,4 +1,5 @@
-import { useState } from "react";
+import Aos from "aos";
+import { useEffect, useState } from "react";
 
 const Faq = ({ product }) => {
 
@@ -8,6 +9,10 @@ const Faq = ({ product }) => {
         setShow((prev) => (prev === id ? null : id))
     }
 
+     useEffect(() => {
+            Aos.init({ duration: 1000 })
+        }, []);
+
     return (
         <section id='faq' className="faq-section">
             <div className="ageTitle">
@@ -16,7 +21,7 @@ const Faq = ({ product }) => {
             </div>
             <div className="faq-tail">
                 {product.faqs.map((f, id) => (
-                    <div key={id} className="faq-box">
+                    <div key={id} data-aos='fade-up' className="faq-box">
                         <div className="faq-block" onClick={() => handleShow(id)}>
                             <h4>{f.question}</h4>
                             {show === id && (<img className="faq-fruit" src={product.details[0].image} alt="" /> )}

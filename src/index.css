@@ -124,12 +124,43 @@ body {
 .home-section {
     position: absolute;
     width: 100%;
+    overflow: hidden;
     height: 100%;
     display: flex;
     justify-content: center;
     padding: 2rem;
     align-items: center;
     color: #fff;
+}
+
+.branding {
+    position: absolute;
+    top: 100px;
+    padding: 1rem;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1);
+    color: #000;
+    display: flex;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-right: unset;
+    width: 175px;
+    height: 125px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: 10rem 0 0 10rem;
+}
+
+.branding img {
+    width: 30px;
+    height: 30px;
+}
+
+.branding p {
+    font-size: 10px;
+    text-align: end;
 }
 
 .about-svg {
@@ -147,7 +178,6 @@ body {
     text-align: center;
     align-items: center;
     width: 600px;
-    transform: translateY(-25px);
 }
 
 .home-box h3 {
@@ -191,14 +221,13 @@ body {
 }
 
 .home-stamp img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width:700px) {
     .home-box {
         width: 100%;
-        transform: translateY(-25px);
     }
 
     .home-box h3 {
@@ -284,6 +313,7 @@ body {
     font-size: 12vw;
     font-weight: 900;
     color: #fff;
+    transform: translateY(-50px);
     text-transform: uppercase;
     text-align: center;
 }
@@ -314,7 +344,7 @@ body {
     left: 2rem;
     display: flex;
     flex-direction: column;
-    width: 325px;
+    width: 400px;
     gap: 10px;
     padding: 2rem;
     display: flex;
@@ -331,7 +361,7 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 
 .product-stamp {
@@ -354,7 +384,11 @@ body {
 @media (max-width:640px) {
     .product-title {
         left: 1rem;
-        bottom: 1rem;
+        width: 300px;
+    }
+
+    .product-taste {
+        font-size: 14px;
     }
 }
 
@@ -1489,7 +1523,6 @@ body {
 .join-container {
     display: flex;
     gap: 3rem;
-    flex-direction: row-reverse;
 }
 
 .join-img {
@@ -1500,10 +1533,10 @@ body {
 }
 
 .join-img img {
-    width: 400px;
+    width: 600px;
     height: 400px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 5px;
 }
 
 .join-box {
@@ -1551,6 +1584,10 @@ body {
         position: unset;
     }
 
+    .drink-image img {
+        width: 100%;
+    }
+
     .make-container {
         width: 100%;
     }
@@ -1569,11 +1606,11 @@ body {
 @media (max-width: 1000px) {
     .story-box {
         flex-direction: column;
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .story-container {
-        gap: 2rem;
+        gap: 3rem;
     }
 
     .story-box:nth-child(2) {
@@ -1593,6 +1630,14 @@ body {
     .about-reward {
         padding-top: 0;
     }
+
+    .story-img {
+        width: 100%;
+    }
+
+    .img-block {
+        width: 100%;
+    }
 }
 
 @media (max-width:640px) {
@@ -1602,11 +1647,6 @@ body {
 
     .choose-stamp {
         width: 100%;
-    }
-
-    .join-img img {
-        width: 300px;
-        height: 300px;
     }
 
     .story-stamp {
@@ -1635,14 +1675,6 @@ body {
     .story-content p {
         width: 100%;
     }
-
-    .story-img {
-        width: 100%;
-    }
-
-    .img-block {
-        width: 100%;
-    }
 }
 
 .ah-section {
@@ -1650,7 +1682,7 @@ body {
     flex-direction: column;
     overflow: hidden;
     gap: 3rem;
-    padding: 0rem 2rem 4rem 0;
+    padding: 0rem 2rem 4rem 2rem;
 }
 
 @media (max-width: 800px) {
@@ -1744,8 +1776,14 @@ body {
     width: 75px;
     height: 75px;
     border-radius: 50%;
-    background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     padding: 1rem;
     align-self: self-end;
     transition: 0.3s ease;
@@ -1767,7 +1805,7 @@ body {
     }
 
     .ah-banner {
-        width: 400px;
+        width: 100%;
         height: 500px;
     }
 }
@@ -1915,8 +1953,8 @@ body {
 }
 
 .popup-drink {
-    width: 100px;
-    height: 250px;
+    width: 125px;
+    height: 300px;
     transform: rotate(-5deg);
     object-fit: cover;
 }

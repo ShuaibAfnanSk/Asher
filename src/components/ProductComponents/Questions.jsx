@@ -1,4 +1,5 @@
-import { useState } from "react";
+import Aos from "aos";
+import { useEffect, useState } from "react";
 
 const Questions = ({ product, heading, image }) => {
 
@@ -8,12 +9,16 @@ const Questions = ({ product, heading, image }) => {
         setShow((prev) => (prev === id ? null : id))
     }
 
+     useEffect(() => {
+            Aos.init({ duration: 1000 })
+        }, []);
+
     return (
         <section className="question-wrapper">
-            <div className="question-left">
+            <div className="question-left" data-aos="fade-right">
                 <img className="" src={image} alt="" />
             </div>
-            <div className="question-right">
+            <div className="question-right" data-aos="fade-left">
                 <h3>{heading}</h3>
                 <div className="question-box">
                     {product.map((f, id) => (

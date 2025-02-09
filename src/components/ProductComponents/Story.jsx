@@ -2,7 +2,7 @@ import invest from "../../jsons/invest";
 import products from "../../jsons/products";
 import vision from "../../jsons/vision";
 import orange from "../../assets/orange.jpg";
-import coconut from "../../assets/drink.jpg";
+import coconut from "../../assets/fruits.jpg";
 import video from "../../assets/about.mp4";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -33,13 +33,13 @@ const Story = () => {
                     </div>
                     <div className="story-img">
                         <img data-aos='fade-up' className="img-block" src={orange} alt="" />
-                        <div data-aos='fade-up' className="story-stamp end"><img src={products[0].details[0].image} alt="" /><p>At Asher, we believe it’s never too late to return to what’s right. It’s time to step away from the artificial and embrace the natural.</p></div>
+                        <div data-aos='fade-right' className="story-stamp end"><img src={products[0].details[0].image} alt="" /><p>At Asher, we believe it’s never too late to return to what’s right. It’s time to step away from the artificial and embrace the natural.</p></div>
                     </div>
                 </div>
                 <div className="story-box">
                     <div className="story-img">
                         <img data-aos='fade-up' className="img-block" src={coconut} alt="" />
-                        <div data-aos='fade-up' className="story-stamp start"><img src={products[5].details[0].image} alt="" /><p>Life is a blessing, and so is nature. Let’s honor both by making better choices not just for today, but for every day to come.</p></div>
+                        <div data-aos='fade-left' className="story-stamp start"><img src={products[5].details[0].image} alt="" /><p>Life is a blessing, and so is nature. Let’s honor both by making better choices not just for today, but for every day to come.</p></div>
                     </div>
                     <div className="story-content">
                         <p data-aos='fade-up'>We wake up every day surrounded by artificial solutions packaged cereals for breakfast, energy drinks for a quick boost, synthetic products promising beauty.</p>

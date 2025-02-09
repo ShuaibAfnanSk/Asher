@@ -1,8 +1,532 @@
 const products = [
     {
         id: "01",
+        taste: "Sweet and earthy with a blend of apple, beetroot, and carrot, balanced by tangy lime. A subtle kick of ginger and spices, with a smooth, nutty texture from chia and flax seeds!",
+        color: "#ff4355",
+        fruit: "Apple",
+        name: "ABC Power Punch",
+        image: "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6fd0a17b480f1da3bb_3.png",
+        details: [
+            {
+                ingredient: "Apple",
+                nutrients: "Fiber, Vitamin C, Potassium, Antioxidants",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/apple.png",
+                benefits: [
+                    "Supports digestion",
+                    "Boosts immunity",
+                    "Promotes heart health"
+                ]
+            },
+            {
+                ingredient: "Beetroot",
+                nutrients: "Nitrates, Iron, Folate, Vitamin C",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/beetroot.png",
+                benefits: [
+                    "Enhances blood circulation",
+                    "Supports liver function",
+                    "Boosts stamina"
+                ]
+            },
+            {
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/carrot.png",
+                ingredient: "Carrot",
+                nutrients: "Beta-Carotene, Vitamin A, Fiber, Potassium",
+                benefits: [
+                    "Supports eye health",
+                    "Enhances skin glow",
+                    "Strengthens immunity"
+                ]
+            },
+            {
+                ingredient: "Chia Seeds",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/chia.png",
+                nutrients: "Omega-3 Fatty Acids, Fiber, Calcium, Magnesium",
+                benefits: [
+                    "Supports digestion",
+                    "Promotes heart health",
+                    "Boosts energy levels"
+                ]
+            },
+            {
+                ingredient: "Ground Flaxseeds",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/flaxseeds.png",
+                nutrients: "Omega-3 Fatty Acids, Lignans, Fiber, Vitamin B1",
+                benefits: [
+                    "Reduces inflammation",
+                    "Supports heart health",
+                    "Aids hormonal balance"
+                ]
+            },
+            {
+                ingredient: "Spinach",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/spinach.png",
+                nutrients: "Iron, Vitamin K, Folate, Magnesium, Calcium",
+                benefits: [
+                    "Boosts energy",
+                    "Strengthens bones",
+                    "Supports immunity"
+                ]
+            },
+            {
+                ingredient: "Ginger",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/ginger.png",
+                nutrients: "Gingerol, Vitamin B6, Magnesium, Potassium",
+                benefits: [
+                    "Reduces inflammation",
+                    "Aids digestion",
+                    "Boosts metabolism"
+                ]
+            },
+            {
+                ingredient: "Lime juice",
+                nutrients: "Vitamin C, Citric Acid, Flavonoids",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png",
+                benefits: [
+                    "Supports liver detoxification",
+                    "Improves digestion",
+                    "Promotes skin health"
+                ]
+            },
+            {
+                ingredient: "Cinnamon",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/cinnamon.png",
+                nutrients: "Cinnamaldehyde, Antioxidants, Calcium",
+                benefits: [
+                    "Helps regulate blood sugar",
+                    "Improves circulation",
+                    "Supports immunity"
+                ]
+            },
+            {
+                ingredient: "Turmeric",
+                nutrients: "Curcumin, Potassium, Vitamin C",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/turmeric.png",
+                benefits: [
+                    "Reduces inflammation",
+                    "Supports joint health",
+                    "Has antioxidant properties"
+                ]
+            },
+            {
+                ingredient: "Mint (Pudina)",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pudina.png",
+                nutrients: "Menthol, Vitamin A, Iron",
+                benefits: [
+                    "Aids digestion",
+                    "Freshens breath",
+                    "Provides a calming effect"
+                ]
+            },
+            {
+                ingredient: "Black Pepper",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/blacksalt.png",
+                nutrients: "Piperine, Iron, Potassium",
+                benefits: [
+                    "Enhances nutrient absorption (especially curcumin)",
+                    "Supports metabolism",
+                    "Aids digestion"
+                ]
+            }
+        ],
+        bodyReaction: [
+            {
+                duration: "1-3 Days",
+                benefits: "Improved hydration, better digestion, and enhanced energy."
+            },
+            {
+                duration: "1 Week",
+                benefits: "Reduced bloating, clearer skin, and improved focus."
+            },
+            {
+                duration: "2-3 Weeks",
+                benefits: "Enhanced stamina, better immunity, and visible skin glow."
+            },
+            {
+                duration: "1 Month",
+                benefits: "Noticeable improvement in digestion, reduced inflammation, and vibrant energy levels."
+            },
+            {
+                duration: "2-3 Months",
+                benefits: "Long-term benefits like balanced metabolism, glowing skin, and stronger immunity."
+            }
+        ],
+
+        timings: [
+            {
+                duration: "Morning",
+                benefits: "Kickstarts metabolism, detoxifies the body, and energizes you for the day."
+            },
+            {
+                duration: "Pre-Workout",
+                benefits: "Provides natural energy, boosts stamina, and enhances endurance."
+            },
+            {
+                duration: "Post-Workout",
+                benefits: "Replenishes lost nutrients, aids muscle recovery, and supports hydration."
+            },
+            {
+                duration: "Midday Snack",
+                benefits: "Curbs unhealthy cravings and keeps you refreshed and energized."
+            }
+        ],
+
+        ageCriteria: [
+            {
+                ageGroup: "Children (3-12)",
+                recommendedServing: "100-150 ml daily",
+                benefits: "Supports digestion, boosts immunity, and promotes healthy growth."
+            },
+            {
+                ageGroup: "Teens (13-19)",
+                recommendedServing: "200-250 ml daily",
+                benefits: "Enhances stamina, boosts energy, promotes clear skin, supports vitality."
+            },
+            {
+                ageGroup: "Adults (20-50)",
+                recommendedServing: "250-300 ml daily",
+                benefits: "Provides energy, supports heart health, detoxifies, and strengthens immunity."
+            },
+            {
+                ageGroup: "Seniors (50+)",
+                recommendedServing: "150-200 ml daily",
+                benefits: "Boosts immunity, reduces inflammation, supports joint health, and maintains vitality."
+            },
+            {
+                ageGroup: "Allergy Prone",
+                recommendedServing: "Not recommended",
+                benefits: "Avoid if allergic to citrus fruits, ginger, turmeric, or cinnamon."
+            }
+        ],
+
+        sourceCredibility: [
+            "National Institutes of Health (NIH)",
+            "United States Department of Agriculture (USDA)",
+            "Harvard Medical School",
+            "World Health Organization (WHO)"
+        ],
+
+        expertQuote: {
+            quote: "ABC juice—Apple, Beetroot, and Carrot—is a magical blend that detoxifies your body, boosts blood health, and gives your skin a natural, radiant glow.",
+            name: "Dr. Maya Thompson",
+            designation: "Holistic Health Specialist"
+        },
+
+        faqs: [
+            {
+                question: "Can I drink this juice daily?",
+                answer: "Yes, it's a nutrient-dense option for daily consumption."
+            },
+            {
+                question: "Is this juice suitable for children?",
+                answer: "Yes, but adjust ginger and black pepper for children's taste and sensitivity."
+            },
+            {
+                question: "Does this juice improve skin health?",
+                answer: "Absolutely! Ingredients like apple, carrot, and turmeric promote a radiant complexion."
+            },
+            {
+                question: "Is this juice good for detoxification?",
+                answer: "Yes, beetroot, lemon, and spinach are natural detoxifiers."
+            },
+            {
+                question: "Can this juice support weight loss?",
+                answer: "Yes, it's low in calories, rich in fiber, and supports metabolism."
+            },
+            {
+                question: "Does ABC Juice Cause a Sugar Spike?",
+                answer: "since this juice contains ingredients that balance blood sugar (like chia, flax, cinnamon, and turmeric), the spike is often slower and less intense."
+            }
+        ],
+
+        gymQuestions: [
+            {
+                question: "Is this juice good for pre-workout?",
+                answer: "Yes, it boosts energy, improves circulation (thanks to beetroot), and enhances endurance."
+            },
+            {
+                question: "Can this juice aid post-workout recovery?",
+                answer: "Yes, it replenishes lost nutrients, fights inflammation, and supports hydration."
+            },
+            {
+                question: "Does this juice enhance endurance?",
+                answer: "Yes, with ingredients like beetroot and chia seeds, it improves oxygen flow and stamina."
+            }
+        ],
+
+        otherQuestions: [
+            {
+                question: "Can this juice be consumed during pregnancy?",
+                answer: "Yes, but consult your healthcare provider for personalized advice."
+            },
+            {
+                question: "Does this juice detox the body?",
+                answer: "Yes, it's packed with natural detoxifying ingredients like beetroot, lemon, and spinach."
+            },
+            {
+                question: "Is this juice vegan-friendly?",
+                answer: "Yes, use maple syrup instead of honey for a vegan option."
+            }
+        ]
+    },
+    {
+        id: "02",
+        taste: "Sweet and citrusy with a fresh orange and carrot blend, brightened by zesty lime and cooling mint. A hint of cinnamon, turmeric, and black pepper adds a warming, earthy kick!",
+        color: "#ff994d",
+        name: "Orange Glow",
+        fruit: "Orange",
+        image: "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c97372d85d43ff3c13f_1%20(1).png",
+        details: [
+            {
+                ingredient: "Fresh Oranges",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/Orange.png",
+                nutrients: "Vitamin C, Folate, Potassium, Fiber",
+                benefits: [
+                    "Strengthens immunity",
+                    "Promotes skin health",
+                    "Supports heart function"
+                ]
+            },
+            {
+                ingredient: "Carrot",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/carrot.png",
+                nutrients: "Beta-Carotene, Vitamin A, Fiber, Potassium",
+                benefits: [
+                    "Supports eye health",
+                    "Enhances skin glow",
+                    "Aids digestion"
+                ]
+            },
+            {
+                ingredient: "Ginger",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/ginger.png",
+                nutrients: "Gingerol, Magnesium, Vitamin B6, Potassium",
+                benefits: [
+                    "Reduces inflammation",
+                    "Supports digestion",
+                    "Boosts immunity"
+                ]
+            },
+            {
+                ingredient: "Lime juice",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png",
+                nutrients: "Vitamin C, Citric Acid, Flavonoids, Potassium",
+                benefits: [
+                    "Supports liver detoxification",
+                    "Improves digestion",
+                    "Promotes skin health"
+                ]
+            },
+            {
+                ingredient: "Turmeric",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/turmeric.png",
+                nutrients: "Curcumin, Potassium, Vitamin C, Magnesium",
+                benefits: [
+                    "Reduces inflammation",
+                    "Supports joint health",
+                    "Boosts antioxidant levels"
+                ]
+            },
+            {
+                ingredient: "Cinnamon",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/cinnamon.png",
+                nutrients: "Cinnamaldehyde, Calcium, Iron, Antioxidants",
+                benefits: [
+                    "Helps regulate blood sugar",
+                    "Supports immunity",
+                    "Adds natural warmth and flavor"
+                ]
+            },
+            {
+                ingredient: "Chia Seeds",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/chia.png",
+                nutrients: "Omega-3 Fatty Acids, Fiber, Calcium, Magnesium",
+                benefits: [
+                    "Supports digestive health",
+                    "Promotes heart health",
+                    "Nourishes skin and hair"
+                ]
+            },
+            {
+                ingredient: "Mint (Pudina)",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pudina.png",
+                nutrients: "Menthol, Vitamin A, Vitamin C, Iron",
+                benefits: [
+                    "Aids digestion",
+                    "Freshens breath",
+                    "Has a calming effect"
+                ]
+            },
+            {
+                ingredient: "Black Pepper",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/blacksalt.png",
+                nutrients: "Piperine, Iron, Potassium, Magnesium",
+                benefits: [
+                    "Enhances nutrient absorption (especially curcumin)",
+                    "Supports metabolism",
+                    "Aids digestion"
+                ]
+            }
+        ],
+
+        bodyReaction: [
+            {
+                duration: "1-3 Days",
+                benefits: "Improved hydration, better digestion, and a subtle energy boost."
+            },
+            {
+                duration: "1 Week",
+                benefits: "Brighter skin, reduced bloating, and increased vitality."
+            },
+            {
+                duration: "2-3 Weeks",
+                benefits: "Strengthened immunity, enhanced metabolism, and clearer complexion."
+            },
+            {
+                duration: "1 Month",
+                benefits: "Noticeable improvement in overall energy, digestion, and skin glow."
+            },
+            {
+                duration: "2-3 Months",
+                benefits: "Long-term benefits like reduced inflammation, better digestion, and sustained energy."
+            }
+        ],
+
+        timings: [
+            {
+                duration: "Morning (7-8 AM)",
+                benefits: "Detox, skin glow, digestion boost, Weight loss",
+            },
+            {
+                duration: "Pre-Workout",
+                benefits: "Energy, stamina, endurance",
+            },
+            {
+                duration: "Mid-Morning (10-11 AM)",
+                benefits: "Healthy snack, energy boost",
+            },
+            {
+                duration: "Post-Workout",
+                benefits: "Muscle recovery, hydration",
+            },
+            {
+                duration: "Evening (4-6 PM)",
+                benefits: "Mental clarity, stress relief, Avoid junk food cravings",
+            }
+        ],
+
+        ageCriteria: [
+            {
+                ageGroup: "Infants (Below 1)",
+                recommendedServing: "Not recommended",
+                notes: "The juice contains citrus (acidic) and other strong ingredients unsuitable for infants."
+            },
+            {
+                ageGroup: "Toddlers (1-2)",
+                recommendedServing: "20-30 ml (diluted)",
+                notes: "Introduce in small, diluted portions to avoid stomach sensitivity."
+            },
+            {
+                ageGroup: "Children (3-12)",
+                recommendedServing: "50-100 ml",
+                notes: "Beneficial for immunity, energy, and skin health; avoid overconsumption due to citrus acidity."
+            },
+            {
+                ageGroup: "Teenagers (13-18)",
+                recommendedServing: "150-200 ml",
+                notes: "Supports energy, skin glow, and metabolism; great for active lifestyles and hormonal benefits."
+            },
+            {
+                ageGroup: "Adults (19-60)",
+                recommendedServing: "200-250 ml",
+                notes: "Ideal for boosting metabolism, immunity, and skin health; perfect as a morning or workout drink."
+            },
+            {
+                ageGroup: "Seniors (60+)",
+                recommendedServing: "150-200 ml",
+                notes: "Provides antioxidants and aids digestion; monitor if there are acidity or citrus sensitivities."
+            },
+            {
+                ageGroup: "Pregnant Women",
+                recommendedServing: "Moderation (150-200 ml)",
+                notes: "Rich in vitamin C and folate; consult a doctor due to ginger, turmeric, and cinnamon content."
+            },
+            {
+                ageGroup: "Allergy Prone",
+                recommendedServing: "Not recommended",
+                notes: "Avoid if allergic to citrus fruits, ginger, turmeric, or cinnamon."
+            }
+        ],
+
+        sourceCredibility: [
+            "National Institutes of Health (NIH)",
+            "United States Department of Agriculture (USDA)",
+            "Harvard Medical School",
+            "World Health Organization (WHO)"
+        ],
+
+        expertQuote: {
+            quote: "Orange juice is liquid sunshine for your body—bursting with vitamin C, energizing nutrients, and immune-boosting properties to keep you vibrant and healthy.",
+            name: "Dr. Sophia Allen",
+            designation: "Wellness and Nutrition Expert"
+        },
+
+        faqs: [
+            {
+                question: "Can I drink this juice daily?",
+                answer: "Yes, it's safe and highly nutritious for daily consumption."
+            },
+            {
+                question: "Is this juice suitable for children?",
+                answer: "Yes, but reduce the ginger and black pepper quantity for children."
+            },
+            {
+                question: "Does this juice improve skin health?",
+                answer: "Absolutely! With vitamin C and beta-carotene, it promotes a radiant and glowing complexion."
+            },
+            {
+                question: "Does this juice help with digestion?",
+                answer: "Yes, the combination of lemon, ginger, and mint supports healthy digestion."
+            },
+            {
+                question: "Is this juice good for immunity?",
+                answer: "Yes, it's packed with immune-boosting ingredients like oranges, ginger, and turmeric."
+            }
+        ],
+
+        gymQuestions: [
+            {
+                question: "Is this juice suitable for pre-workout?",
+                answer: "Yes, it provides natural energy, reduces inflammation, and supports stamina."
+            },
+            {
+                question: "Can this juice aid post-workout recovery?",
+                answer: "Yes, it replenishes electrolytes, reduces muscle inflammation, and promotes hydration."
+            },
+            {
+                question: "Does this juice improve endurance?",
+                answer: "Yes, with its nutrient-rich ingredients, it enhances stamina and reduces fatigue."
+            }
+        ],
+
+        otherQuestions: [
+            {
+                question: "Can this juice be consumed during pregnancy?",
+                answer: "Yes, but consult your healthcare provider for individual guidance."
+            },
+            {
+                question: "Does this juice detox the body?",
+                answer: "Yes, it naturally supports detoxification through its hydrating and antioxidant-rich ingredients."
+            },
+            {
+                question: "Can this juice support weight management?",
+                answer: "Yes, it's low in calories, boosts metabolism, and curbs unhealthy cravings."
+            }
+        ]
+    },
+    {
+        id: "03",
         name: "Pineapple Green Refresh",
-        tagline: "A sip of pineapple Green Refresh is a tropical burst of wellness.",
+        taste: "Sweet, tangy, and refreshing with a tropical pineapple burst, zesty lime, and a hint of ginger. Light, smooth, and energizing!",
         color: "#dfa909",
         fruit: "Pineapple",
         image: "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6133ce62c932cf59e0_6.png",
@@ -271,8 +795,8 @@ const products = [
         ],
     },
     {
-        id: "02",
-        tagline: "Refresh your soul, one hydrating sip at a time.",
+        id: "04",
+        taste: "Refreshing and mildly sweet with juicy watermelon and crisp cucumber, balanced by zesty lime. A hint of ginger and turmeric adds warmth, while basil seeds bring a fun, light texture!",
         color: "#e6150f",
         fruit: "Watermelon",
         name: "Watermelon Bliss",
@@ -310,16 +834,6 @@ const products = [
                 ]
             },
             {
-                ingredient: "Ginger",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/ginger.png",
-                nutrients: "Gingerol, Vitamin B6, Magnesium, Potassium",
-                benefits: [
-                    "Reduces inflammation",
-                    "Aids digestion",
-                    "Strengthens immunity"
-                ]
-            },
-            {
                 ingredient: "Mint (Pudina)",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pudina.png",
                 nutrients: "Menthol, Vitamin A, Vitamin C, Iron",
@@ -340,7 +854,7 @@ const products = [
                 ]
             },
             {
-                ingredient: "Chia Seeds",
+                ingredient: "Basil Seeds",
                 nutrients: "Omega-3s, Fiber, Protein, Iron, Calcium",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/chia.png",
                 benefits: [
@@ -515,247 +1029,8 @@ const products = [
         ],
     },
     {
-        id: "03",
-        tagline: "A concentrated boost of vitality in every shot.",
-        color: "#bc8d03",
-        fruit: "Ginger",
-        name: "Ginger Shots",
-        image: "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6ca2f291522ffd0d37_2.png",
-        details: [
-            {
-                ingredient: "Ginger",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/ginger.png",
-                nutrients: "Gingerol, Vitamin B6, Magnesium, Potassium, Zinc",
-                benefits: [
-                    "Supports immunity",
-                    "Reduces inflammation",
-                    "Aids digestion",
-                    "Relieves nausea",
-                    "Enhances cognitive function"
-                ]
-            },
-            {
-                ingredient: "Lime juice",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png",
-                nutrients: "Vitamin C, Citric Acid, Potassium, Flavonoids",
-                benefits: [
-                    "Supports liver detoxification",
-                    "Supports skin health",
-                    "Boosts immunity",
-                    "Aids digestion"
-                ]
-            },
-            {
-                ingredient: "Coconut Water",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/coconut.png",
-                nutrients: "Electrolytes (Potassium, Magnesium, Calcium), Vitamin C",
-                benefits: [
-                    "Hydrates",
-                    "Replenishes electrolytes",
-                    "Supports heart health",
-                    "Aids post-exercise recovery"
-                ]
-            },
-            {
-                ingredient: "Honey",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/honey.png",
-                nutrients: "Antioxidants, Natural Sugars, Vitamins, Minerals",
-                benefits: [
-                    "Provides natural energy",
-                    "Soothes the throat",
-                    "Supports immunity",
-                    "Has antibacterial properties"
-                ]
-            },
-            {
-                ingredient: "Turmeric",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/turmeric.png",
-                nutrients: "Curcumin, Vitamin C, Potassium, Magnesium, Iron",
-                benefits: [
-                    "Reduces inflammation",
-                    "Supports liver detoxification",
-                    "Promotes joint health"
-                ]
-            },
-            {
-                ingredient: "Black Pepper",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/blacksalt.png",
-                nutrients: "Piperine, Iron, Manganese, Potassium, Vitamin K",
-                benefits: [
-                    "Enhances nutrient absorption (especially curcumin)",
-                    "Boosts metabolism",
-                    "Aids digestion"
-                ]
-            },
-            {
-                ingredient: "Water",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/water.png",
-                nutrients: "Essential Hydration",
-                benefits: [
-                    "Maintains fluid balance",
-                    "Supports digestion",
-                    "Aids nutrient absorption"
-                ]
-            }
-        ],
-        bodyReaction: [
-            {
-                duration: "1-3 Days",
-                benefits: "Improved digestion, reduced inflammation, and better hydration."
-            },
-            {
-                duration: "1 Week",
-                benefits: "Boosted immunity, enhanced energy, and reduced bloating."
-            },
-            {
-                duration: "2-3 Weeks",
-                benefits: "Clearer skin, stronger metabolism, and reduced joint discomfort."
-            },
-            {
-                duration: "1 Month",
-                benefits: "Noticeable anti-inflammatory effects, improved digestion, and sustained energy levels."
-            },
-            {
-                duration: "2-3 Months",
-                benefits: "Long-term benefits such as a stronger immune system, detoxified liver, and healthy glow."
-            }
-        ],
-
-        timings: [
-            {
-                duration: "Morning",
-                benefits: "Detoxifies the body, boosts metabolism, and provides an energizing start to the day."
-            },
-            {
-                duration: "Pre-Workout",
-                benefits: "Enhances stamina, reduces fatigue, and supports endurance during exercise."
-            },
-            {
-                duration: "Afternoon",
-                benefits: "Recharges energy levels and combats midday sluggishness."
-            },
-            {
-                duration: "Post-Meal",
-                benefits: "Aids digestion and reduces bloating."
-            }
-        ],
-
-        ageCriteria: [
-            {
-                ageGroup: "Infants (Below 1)",
-                recommendedServing: "Not recommended",
-                notes: "Ginger is too potent for infant digestion and may cause irritation."
-            },
-            {
-                ageGroup: "Toddlers (1-2)",
-                recommendedServing: "Not recommended",
-                notes: "The concentrated ginger flavor may be too strong for this age group."
-            },
-            {
-                ageGroup: "Children (3-12)",
-                recommendedServing: "10-20 ml (diluted)",
-                notes: "Dilute with water or juice to reduce potency; introduce gradually."
-            },
-            {
-                ageGroup: "Teenagers (13-18)",
-                recommendedServing: "30-40 ml",
-                notes: "Provides an immunity boost and helps digestion; ideal during seasonal benefits."
-            },
-            {
-                ageGroup: "Adults (19-60)",
-                recommendedServing: "40-50 ml",
-                notes: "Perfect for boosting metabolism, reducing inflammation, and supporting immunity."
-            },
-            {
-                ageGroup: "Seniors (60+)",
-                recommendedServing: "30-40 ml",
-                notes: "Beneficial for joint health and immunity; consume with caution if on blood-thinning medication."
-            },
-            {
-                ageGroup: "Pregnant Women",
-                recommendedServing: "Moderation (20-30 ml)",
-                notes: "Can alleviate nausea but should be consumed in limited quantities. Consult a healthcare provider."
-            },
-            {
-                ageGroup: "Allergy Prone",
-                recommendedServing: "Not recommended",
-                notes: "Avoid if allergic to ginger, honey, or any added ingredients like turmeric."
-            }
-        ],
-
-        sourceCredibility: [
-            "National Institutes of Health (NIH)",
-            "United States Department of Agriculture (USDA)",
-            "World Health Organization (WHO)",
-            "Academy of Nutrition and Dietetics (AND)"
-        ],
-
-        expertQuote: {
-            quote: "A ginger shot is nature's ultimate health elixir—packed with powerful antioxidants, anti-inflammatory compounds, and immunity boosters to fuel your body and mind every day.",
-            name: "Dr. Emily Carter",
-            designation: "Nutrition Specialist"
-        },
-
-        faqs: [
-            {
-                question: "Can I drink ginger shots daily?",
-                answer: "Yes, it's safe to consume daily as part of a balanced diet."
-            },
-            {
-                question: "Are ginger shots suitable for children?",
-                answer: "Yes, but adjust the portion size and consult with a pediatrician if needed."
-            },
-            {
-                question: "Can ginger shots help with weight loss?",
-                answer: "Yes, they boost metabolism and help control appetite."
-            },
-            {
-                question: "Do ginger shots contain added sugar?",
-                answer: "No, they are naturally sweetened with honey."
-            },
-            {
-                question: "Can I drink ginger shots if I have acid reflux?",
-                answer: "Consume in moderation, as ginger can sometimes trigger symptoms in sensitive individuals."
-            },
-            {
-                question: "Who should avoid ginger shots?",
-                answer: "People with ulcers or sensitive stomachs should consume cautiously. Avoid if allergic to any ingredients or advised against by a doctor."
-            },
-            {
-                question: "Does it cause acidity or stomach issues?",
-                answer: "In moderate amounts, no. However, excessive consumption may irritate sensitive stomachs."
-            }
-        ],
-
-        gymQuestions: [
-            {
-                question: "Are ginger shots good for pre-workout?",
-                answer: "Yes, they provide natural energy and reduce inflammation, aiding performance."
-            },
-            {
-                question: "Can ginger shots aid recovery after workouts?",
-                answer: "Absolutely! Turmeric and ginger reduce muscle soreness and inflammation."
-            }
-        ],
-
-        otherQuestions: [
-            {
-                question: "Can ginger shots be consumed during pregnancy?",
-                answer: "Yes, but consult with a healthcare provider for optimal portion sizes."
-            },
-            {
-                question: "Do ginger shots detox the body?",
-                answer: "Yes, they naturally support liver detoxification and enhance hydration."
-            },
-            {
-                question: "Can ginger shots help with cold and flu?",
-                answer: "Yes, they strengthen immunity and soothe throat discomfort."
-            }
-        ]
-    },
-    {
-        id: "04",
-        tagline: "A luscious fusion of berries and grapes for holistic wellness.",
+        id: "05",
+        taste: "Tart and tangy with a bold burst of sour grape and blueberry, balanced by zesty lime and a subtle hint of ginger. Cinnamon and black salt add a unique, warming finish!",
         color: "#b14eff",
         fruit: "Grapeberry",
         name: "GrapeBerry Delight",
@@ -1003,148 +1278,128 @@ const products = [
         ]
     },
     {
-        id: "05",
-        tagline: "A vibrant blend of nature’s finest for a radiant you.",
-        color: "#ff994d",
-        name: "Orange Glow",
-        fruit: "Orange",
-        image: "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c97372d85d43ff3c13f_1%20(1).png",
+        id: "06",
+        taste: "Bold and fiery with a zesty ginger kick, balanced by tangy lime and a touch of honeyed sweetness. A smooth, invigorating blend with warm turmeric spice and a hint of black pepper heat!",
+        color: "#bc8d03",
+        fruit: "Ginger",
+        name: "G3 Zest",
+        image: "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6ca2f291522ffd0d37_2.png",
         details: [
-            {
-                ingredient: "Fresh Oranges",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/Orange.png",
-                nutrients: "Vitamin C, Folate, Potassium, Fiber",
-                benefits: [
-                    "Strengthens immunity",
-                    "Promotes skin health",
-                    "Supports heart function"
-                ]
-            },
-            {
-                ingredient: "Carrot",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/carrot.png",
-                nutrients: "Beta-Carotene, Vitamin A, Fiber, Potassium",
-                benefits: [
-                    "Supports eye health",
-                    "Enhances skin glow",
-                    "Aids digestion"
-                ]
-            },
             {
                 ingredient: "Ginger",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/ginger.png",
-                nutrients: "Gingerol, Magnesium, Vitamin B6, Potassium",
+                nutrients: "Gingerol, Vitamin B6, Magnesium, Potassium, Zinc",
                 benefits: [
+                    "Supports immunity",
                     "Reduces inflammation",
-                    "Supports digestion",
-                    "Boosts immunity"
+                    "Aids digestion",
+                    "Relieves nausea",
+                    "Enhances cognitive function"
                 ]
             },
             {
                 ingredient: "Lime juice",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png",
-                nutrients: "Vitamin C, Citric Acid, Flavonoids, Potassium",
+                nutrients: "Vitamin C, Citric Acid, Potassium, Flavonoids",
                 benefits: [
                     "Supports liver detoxification",
-                    "Improves digestion",
-                    "Promotes skin health"
+                    "Supports skin health",
+                    "Boosts immunity",
+                    "Aids digestion"
+                ]
+            },
+            {
+                ingredient: "Coconut Water",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/coconut.png",
+                nutrients: "Electrolytes (Potassium, Magnesium, Calcium), Vitamin C",
+                benefits: [
+                    "Hydrates",
+                    "Replenishes electrolytes",
+                    "Supports heart health",
+                    "Aids post-exercise recovery"
+                ]
+            },
+            {
+                ingredient: "Honey",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/honey.png",
+                nutrients: "Antioxidants, Natural Sugars, Vitamins, Minerals",
+                benefits: [
+                    "Provides natural energy",
+                    "Soothes the throat",
+                    "Supports immunity",
+                    "Has antibacterial properties"
                 ]
             },
             {
                 ingredient: "Turmeric",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/turmeric.png",
-                nutrients: "Curcumin, Potassium, Vitamin C, Magnesium",
+                nutrients: "Curcumin, Vitamin C, Potassium, Magnesium, Iron",
                 benefits: [
                     "Reduces inflammation",
-                    "Supports joint health",
-                    "Boosts antioxidant levels"
-                ]
-            },
-            {
-                ingredient: "Cinnamon",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/cinnamon.png",
-                nutrients: "Cinnamaldehyde, Calcium, Iron, Antioxidants",
-                benefits: [
-                    "Helps regulate blood sugar",
-                    "Supports immunity",
-                    "Adds natural warmth and flavor"
-                ]
-            },
-            {
-                ingredient: "Chia Seeds",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/chia.png",
-                nutrients: "Omega-3 Fatty Acids, Fiber, Calcium, Magnesium",
-                benefits: [
-                    "Supports digestive health",
-                    "Promotes heart health",
-                    "Nourishes skin and hair"
-                ]
-            },
-            {
-                ingredient: "Mint (Pudina)",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pudina.png",
-                nutrients: "Menthol, Vitamin A, Vitamin C, Iron",
-                benefits: [
-                    "Aids digestion",
-                    "Freshens breath",
-                    "Has a calming effect"
+                    "Supports liver detoxification",
+                    "Promotes joint health"
                 ]
             },
             {
                 ingredient: "Black Pepper",
                 image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/blacksalt.png",
-                nutrients: "Piperine, Iron, Potassium, Magnesium",
+                nutrients: "Piperine, Iron, Manganese, Potassium, Vitamin K",
                 benefits: [
                     "Enhances nutrient absorption (especially curcumin)",
-                    "Supports metabolism",
+                    "Boosts metabolism",
                     "Aids digestion"
+                ]
+            },
+            {
+                ingredient: "Water",
+                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/water.png",
+                nutrients: "Essential Hydration",
+                benefits: [
+                    "Maintains fluid balance",
+                    "Supports digestion",
+                    "Aids nutrient absorption"
                 ]
             }
         ],
-
         bodyReaction: [
             {
                 duration: "1-3 Days",
-                benefits: "Improved hydration, better digestion, and a subtle energy boost."
+                benefits: "Improved digestion, reduced inflammation, and better hydration."
             },
             {
                 duration: "1 Week",
-                benefits: "Brighter skin, reduced bloating, and increased vitality."
+                benefits: "Boosted immunity, enhanced energy, and reduced bloating."
             },
             {
                 duration: "2-3 Weeks",
-                benefits: "Strengthened immunity, enhanced metabolism, and clearer complexion."
+                benefits: "Clearer skin, stronger metabolism, and reduced joint discomfort."
             },
             {
                 duration: "1 Month",
-                benefits: "Noticeable improvement in overall energy, digestion, and skin glow."
+                benefits: "Noticeable anti-inflammatory effects, improved digestion, and sustained energy levels."
             },
             {
                 duration: "2-3 Months",
-                benefits: "Long-term benefits like reduced inflammation, better digestion, and sustained energy."
+                benefits: "Long-term benefits such as a stronger immune system, detoxified liver, and healthy glow."
             }
         ],
 
         timings: [
             {
-                duration: "Morning (7-8 AM)",
-                benefits: "Detox, skin glow, digestion boost, Weight loss",
+                duration: "Morning",
+                benefits: "Detoxifies the body, boosts metabolism, and provides an energizing start to the day."
             },
             {
                 duration: "Pre-Workout",
-                benefits: "Energy, stamina, endurance",
+                benefits: "Enhances stamina, reduces fatigue, and supports endurance during exercise."
             },
             {
-                duration: "Mid-Morning (10-11 AM)",
-                benefits: "Healthy snack, energy boost",
+                duration: "Afternoon",
+                benefits: "Recharges energy levels and combats midday sluggishness."
             },
             {
-                duration: "Post-Workout",
-                benefits: "Muscle recovery, hydration",
-            },
-            {
-                duration: "Evening (4-6 PM)",
-                benefits: "Mental clarity, stress relief, Avoid junk food cravings",
+                duration: "Post-Meal",
+                benefits: "Aids digestion and reduces bloating."
             }
         ],
 
@@ -1152,380 +1407,116 @@ const products = [
             {
                 ageGroup: "Infants (Below 1)",
                 recommendedServing: "Not recommended",
-                notes: "The juice contains citrus (acidic) and other strong ingredients unsuitable for infants."
+                notes: "Ginger is too potent for infant digestion and may cause irritation."
             },
             {
                 ageGroup: "Toddlers (1-2)",
-                recommendedServing: "20-30 ml (diluted)",
-                notes: "Introduce in small, diluted portions to avoid stomach sensitivity."
+                recommendedServing: "Not recommended",
+                notes: "The concentrated ginger flavor may be too strong for this age group."
             },
             {
                 ageGroup: "Children (3-12)",
-                recommendedServing: "50-100 ml",
-                notes: "Beneficial for immunity, energy, and skin health; avoid overconsumption due to citrus acidity."
+                recommendedServing: "10-20 ml (diluted)",
+                notes: "Dilute with water or juice to reduce potency; introduce gradually."
             },
             {
                 ageGroup: "Teenagers (13-18)",
-                recommendedServing: "150-200 ml",
-                notes: "Supports energy, skin glow, and metabolism; great for active lifestyles and hormonal benefits."
+                recommendedServing: "30-40 ml",
+                notes: "Provides an immunity boost and helps digestion; ideal during seasonal benefits."
             },
             {
                 ageGroup: "Adults (19-60)",
-                recommendedServing: "200-250 ml",
-                notes: "Ideal for boosting metabolism, immunity, and skin health; perfect as a morning or workout drink."
+                recommendedServing: "40-50 ml",
+                notes: "Perfect for boosting metabolism, reducing inflammation, and supporting immunity."
             },
             {
                 ageGroup: "Seniors (60+)",
-                recommendedServing: "150-200 ml",
-                notes: "Provides antioxidants and aids digestion; monitor if there are acidity or citrus sensitivities."
+                recommendedServing: "30-40 ml",
+                notes: "Beneficial for joint health and immunity; consume with caution if on blood-thinning medication."
             },
             {
                 ageGroup: "Pregnant Women",
-                recommendedServing: "Moderation (150-200 ml)",
-                notes: "Rich in vitamin C and folate; consult a doctor due to ginger, turmeric, and cinnamon content."
+                recommendedServing: "Moderation (20-30 ml)",
+                notes: "Can alleviate nausea but should be consumed in limited quantities. Consult a healthcare provider."
             },
             {
                 ageGroup: "Allergy Prone",
                 recommendedServing: "Not recommended",
-                notes: "Avoid if allergic to citrus fruits, ginger, turmeric, or cinnamon."
+                notes: "Avoid if allergic to ginger, honey, or any added ingredients like turmeric."
             }
         ],
 
         sourceCredibility: [
             "National Institutes of Health (NIH)",
             "United States Department of Agriculture (USDA)",
-            "Harvard Medical School",
-            "World Health Organization (WHO)"
+            "World Health Organization (WHO)",
+            "Academy of Nutrition and Dietetics (AND)"
         ],
 
         expertQuote: {
-            quote: "Orange juice is liquid sunshine for your body—bursting with vitamin C, energizing nutrients, and immune-boosting properties to keep you vibrant and healthy.",
-            name: "Dr. Sophia Allen",
-            designation: "Wellness and Nutrition Expert"
+            quote: "A ginger shot is nature's ultimate health elixir—packed with powerful antioxidants, anti-inflammatory compounds, and immunity boosters to fuel your body and mind every day.",
+            name: "Dr. Emily Carter",
+            designation: "Nutrition Specialist"
         },
 
         faqs: [
             {
-                question: "Can I drink this juice daily?",
-                answer: "Yes, it's safe and highly nutritious for daily consumption."
+                question: "Can I drink ginger shots daily?",
+                answer: "Yes, it's safe to consume daily as part of a balanced diet."
             },
             {
-                question: "Is this juice suitable for children?",
-                answer: "Yes, but reduce the ginger and black pepper quantity for children."
+                question: "Are ginger shots suitable for children?",
+                answer: "Yes, but adjust the portion size and consult with a pediatrician if needed."
             },
             {
-                question: "Does this juice improve skin health?",
-                answer: "Absolutely! With vitamin C and beta-carotene, it promotes a radiant and glowing complexion."
+                question: "Can ginger shots help with weight loss?",
+                answer: "Yes, they boost metabolism and help control appetite."
             },
             {
-                question: "Does this juice help with digestion?",
-                answer: "Yes, the combination of lemon, ginger, and mint supports healthy digestion."
+                question: "Do ginger shots contain added sugar?",
+                answer: "No, they are naturally sweetened with honey."
             },
             {
-                question: "Is this juice good for immunity?",
-                answer: "Yes, it's packed with immune-boosting ingredients like oranges, ginger, and turmeric."
+                question: "Can I drink ginger shots if I have acid reflux?",
+                answer: "Consume in moderation, as ginger can sometimes trigger symptoms in sensitive individuals."
+            },
+            {
+                question: "Who should avoid ginger shots?",
+                answer: "People with ulcers or sensitive stomachs should consume cautiously. Avoid if allergic to any ingredients or advised against by a doctor."
+            },
+            {
+                question: "Does it cause acidity or stomach issues?",
+                answer: "In moderate amounts, no. However, excessive consumption may irritate sensitive stomachs."
             }
         ],
 
         gymQuestions: [
             {
-                question: "Is this juice suitable for pre-workout?",
-                answer: "Yes, it provides natural energy, reduces inflammation, and supports stamina."
+                question: "Are ginger shots good for pre-workout?",
+                answer: "Yes, they provide natural energy and reduce inflammation, aiding performance."
             },
             {
-                question: "Can this juice aid post-workout recovery?",
-                answer: "Yes, it replenishes electrolytes, reduces muscle inflammation, and promotes hydration."
-            },
-            {
-                question: "Does this juice improve endurance?",
-                answer: "Yes, with its nutrient-rich ingredients, it enhances stamina and reduces fatigue."
+                question: "Can ginger shots aid recovery after workouts?",
+                answer: "Absolutely! Turmeric and ginger reduce muscle soreness and inflammation."
             }
         ],
 
         otherQuestions: [
             {
-                question: "Can this juice be consumed during pregnancy?",
-                answer: "Yes, but consult your healthcare provider for individual guidance."
+                question: "Can ginger shots be consumed during pregnancy?",
+                answer: "Yes, but consult with a healthcare provider for optimal portion sizes."
             },
             {
-                question: "Does this juice detox the body?",
-                answer: "Yes, it naturally supports detoxification through its hydrating and antioxidant-rich ingredients."
+                question: "Do ginger shots detox the body?",
+                answer: "Yes, they naturally support liver detoxification and enhance hydration."
             },
             {
-                question: "Can this juice support weight management?",
-                answer: "Yes, it's low in calories, boosts metabolism, and curbs unhealthy cravings."
-            }
-        ]
-    },
-    {
-        id: "06",
-        tagline: "A powerhouse of nutrients in every sip, crafted for your ultimate health.",
-        color: "#ff4355",
-        fruit: "Apple",
-        name: "ABC Power Punch",
-        image: "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6fd0a17b480f1da3bb_3.png",
-        details: [
-            {
-                ingredient: "Apple",
-                nutrients: "Fiber, Vitamin C, Potassium, Antioxidants",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/apple.png",
-                benefits: [
-                    "Supports digestion",
-                    "Boosts immunity",
-                    "Promotes heart health"
-                ]
-            },
-            {
-                ingredient: "Beetroot",
-                nutrients: "Nitrates, Iron, Folate, Vitamin C",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/beetroot.png",
-                benefits: [
-                    "Enhances blood circulation",
-                    "Supports liver function",
-                    "Boosts stamina"
-                ]
-            },
-            {
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/carrot.png",
-                ingredient: "Carrot",
-                nutrients: "Beta-Carotene, Vitamin A, Fiber, Potassium",
-                benefits: [
-                    "Supports eye health",
-                    "Enhances skin glow",
-                    "Strengthens immunity"
-                ]
-            },
-            {
-                ingredient: "Chia Seeds",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/chia.png",
-                nutrients: "Omega-3 Fatty Acids, Fiber, Calcium, Magnesium",
-                benefits: [
-                    "Supports digestion",
-                    "Promotes heart health",
-                    "Boosts energy levels"
-                ]
-            },
-            {
-                ingredient: "Ground Flaxseeds",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/flaxseeds.png",
-                nutrients: "Omega-3 Fatty Acids, Lignans, Fiber, Vitamin B1",
-                benefits: [
-                    "Reduces inflammation",
-                    "Supports heart health",
-                    "Aids hormonal balance"
-                ]
-            },
-            {
-                ingredient: "Spinach",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/spinach.png",
-                nutrients: "Iron, Vitamin K, Folate, Magnesium, Calcium",
-                benefits: [
-                    "Boosts energy",
-                    "Strengthens bones",
-                    "Supports immunity"
-                ]
-            },
-            {
-                ingredient: "Ginger",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/ginger.png",
-                nutrients: "Gingerol, Vitamin B6, Magnesium, Potassium",
-                benefits: [
-                    "Reduces inflammation",
-                    "Aids digestion",
-                    "Boosts metabolism"
-                ]
-            },
-            {
-                ingredient: "Lime juice",
-                nutrients: "Vitamin C, Citric Acid, Flavonoids",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png",
-                benefits: [
-                    "Supports liver detoxification",
-                    "Improves digestion",
-                    "Promotes skin health"
-                ]
-            },
-            {
-                ingredient: "Cinnamon",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/cinnamon.png",
-                nutrients: "Cinnamaldehyde, Antioxidants, Calcium",
-                benefits: [
-                    "Helps regulate blood sugar",
-                    "Improves circulation",
-                    "Supports immunity"
-                ]
-            },
-            {
-                ingredient: "Turmeric",
-                nutrients: "Curcumin, Potassium, Vitamin C",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/turmeric.png",
-                benefits: [
-                    "Reduces inflammation",
-                    "Supports joint health",
-                    "Has antioxidant properties"
-                ]
-            },
-            {
-                ingredient: "Mint (Pudina)",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pudina.png",
-                nutrients: "Menthol, Vitamin A, Iron",
-                benefits: [
-                    "Aids digestion",
-                    "Freshens breath",
-                    "Provides a calming effect"
-                ]
-            },
-            {
-                ingredient: "Black Pepper",
-                image: "https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/blacksalt.png",
-                nutrients: "Piperine, Iron, Potassium",
-                benefits: [
-                    "Enhances nutrient absorption (especially curcumin)",
-                    "Supports metabolism",
-                    "Aids digestion"
-                ]
-            }
-        ],
-        bodyReaction: [
-            {
-                duration: "1-3 Days",
-                benefits: "Improved hydration, better digestion, and enhanced energy."
-            },
-            {
-                duration: "1 Week",
-                benefits: "Reduced bloating, clearer skin, and improved focus."
-            },
-            {
-                duration: "2-3 Weeks",
-                benefits: "Enhanced stamina, better immunity, and visible skin glow."
-            },
-            {
-                duration: "1 Month",
-                benefits: "Noticeable improvement in digestion, reduced inflammation, and vibrant energy levels."
-            },
-            {
-                duration: "2-3 Months",
-                benefits: "Long-term benefits like balanced metabolism, glowing skin, and stronger immunity."
-            }
-        ],
-
-        timings: [
-            {
-                duration: "Morning",
-                benefits: "Kickstarts metabolism, detoxifies the body, and energizes you for the day."
-            },
-            {
-                duration: "Pre-Workout",
-                benefits: "Provides natural energy, boosts stamina, and enhances endurance."
-            },
-            {
-                duration: "Post-Workout",
-                benefits: "Replenishes lost nutrients, aids muscle recovery, and supports hydration."
-            },
-            {
-                duration: "Midday Snack",
-                benefits: "Curbs unhealthy cravings and keeps you refreshed and energized."
-            }
-        ],
-
-        ageCriteria: [
-            {
-                ageGroup: "Children (3-12)",
-                recommendedServing: "100-150 ml daily",
-                benefits: "Supports digestion, boosts immunity, and promotes healthy growth."
-            },
-            {
-                ageGroup: "Teens (13-19)",
-                recommendedServing: "200-250 ml daily",
-                benefits: "Enhances stamina, boosts energy, promotes clear skin, supports vitality."
-            },
-            {
-                ageGroup: "Adults (20-50)",
-                recommendedServing: "250-300 ml daily",
-                benefits: "Provides energy, supports heart health, detoxifies, and strengthens immunity."
-            },
-            {
-                ageGroup: "Seniors (50+)",
-                recommendedServing: "150-200 ml daily",
-                benefits: "Boosts immunity, reduces inflammation, supports joint health, and maintains vitality."
-            },
-            {
-                ageGroup: "Allergy Prone",
-                recommendedServing: "Not recommended",
-                benefits: "Avoid if allergic to citrus fruits, ginger, turmeric, or cinnamon."
-            }
-        ],
-
-        sourceCredibility: [
-            "National Institutes of Health (NIH)",
-            "United States Department of Agriculture (USDA)",
-            "Harvard Medical School",
-            "World Health Organization (WHO)"
-        ],
-
-        expertQuote: {
-            quote: "ABC juice—Apple, Beetroot, and Carrot—is a magical blend that detoxifies your body, boosts blood health, and gives your skin a natural, radiant glow.",
-            name: "Dr. Maya Thompson",
-            designation: "Holistic Health Specialist"
-        },
-
-        faqs: [
-            {
-                question: "Can I drink this juice daily?",
-                answer: "Yes, it's a nutrient-dense option for daily consumption."
-            },
-            {
-                question: "Is this juice suitable for children?",
-                answer: "Yes, but adjust ginger and black pepper for children's taste and sensitivity."
-            },
-            {
-                question: "Does this juice improve skin health?",
-                answer: "Absolutely! Ingredients like apple, carrot, and turmeric promote a radiant complexion."
-            },
-            {
-                question: "Is this juice good for detoxification?",
-                answer: "Yes, beetroot, lemon, and spinach are natural detoxifiers."
-            },
-            {
-                question: "Can this juice support weight loss?",
-                answer: "Yes, it's low in calories, rich in fiber, and supports metabolism."
-            },
-            {
-                question: "Does ABC Juice Cause a Sugar Spike?",
-                answer: "since this juice contains ingredients that balance blood sugar (like chia, flax, cinnamon, and turmeric), the spike is often slower and less intense."
-            }
-        ],
-
-        gymQuestions: [
-            {
-                question: "Is this juice good for pre-workout?",
-                answer: "Yes, it boosts energy, improves circulation (thanks to beetroot), and enhances endurance."
-            },
-            {
-                question: "Can this juice aid post-workout recovery?",
-                answer: "Yes, it replenishes lost nutrients, fights inflammation, and supports hydration."
-            },
-            {
-                question: "Does this juice enhance endurance?",
-                answer: "Yes, with ingredients like beetroot and chia seeds, it improves oxygen flow and stamina."
-            }
-        ],
-
-        otherQuestions: [
-            {
-                question: "Can this juice be consumed during pregnancy?",
-                answer: "Yes, but consult your healthcare provider for personalized advice."
-            },
-            {
-                question: "Does this juice detox the body?",
-                answer: "Yes, it's packed with natural detoxifying ingredients like beetroot, lemon, and spinach."
-            },
-            {
-                question: "Is this juice vegan-friendly?",
-                answer: "Yes, use maple syrup instead of honey for a vegan option."
+                question: "Can ginger shots help with cold and flu?",
+                answer: "Yes, they strengthen immunity and soothe throat discomfort."
             }
         ]
     }
+
 ]
 
 export default products;

@@ -1,4 +1,4 @@
-import invest from '../../assets/invest.jpg';
+import invest from '../../assets/cocktail.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";

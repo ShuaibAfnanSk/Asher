@@ -8,6 +8,7 @@ import Juice from '../components/Juice';
 import AboutHome from '../components/AboutHome';
 import video from "../assets/banner.mp4"
 import usp from '../jsons/usp';
+import winner from '../assets/winner.png'
 
 function Home() {
 
@@ -29,6 +30,10 @@ function Home() {
             <div data-aos='fade-up' className='know-more'>
               <a href="#about">know more <FaAngleRight /></a>
             </div>
+          </div>
+          <div data-aos='fade-left' className='branding'>
+            <img src={winner} alt="" />
+            <p>India's first 100% organic and Health concious juice brand</p>
           </div>
         </div>
         <div className='home-stamps'>

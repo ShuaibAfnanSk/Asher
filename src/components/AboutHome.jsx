@@ -22,7 +22,7 @@ const AboutHome = () => {
                 <div className="ah-img">
                     <div className="ah-banner">
                         <img data-aos='fade-up' src={banner} className="ah-polo" alt="" />
-                        <img data-aos='fade-up' src={products[4].details[0].image} className="ah-fruit" alt="" />
+                        <img data-aos='fade-up' src={products[1].details[0].image} className="ah-fruit" alt="" />
                     </div>
                 </div>
                 <div className="ah-container">
@@ -35,7 +35,7 @@ const AboutHome = () => {
                             <img src={svg} alt="" />
                             <p>With every sip of our fresh, pure juices, you’re not just rewarding yourself—you’re choosing a healthier, stronger, and happier you.</p>
                         </div>
-                        <Link className="click" to={'/about'}><button style={{fontSize: "14px"}}>Know more</button></Link>
+                        <Link className="click" to={'/about'}><button>Know more</button></Link>
                     </div>
                 </div>
             </div>
