@@ -15,7 +15,7 @@ const Story = () => {
     }, []);
 
     return (
-        <section className="about-story">
+        <section className="about-story" style={{overflow: "hidden"}}>
             <div className="about-hero">
                 <video className="about-banner" autoPlay loop muted playsInline>
                     <source src={video} type="video/mp4" />

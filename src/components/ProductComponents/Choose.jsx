@@ -10,7 +10,7 @@ const Choose = () => {
     }, []);
 
     return (
-        <section className="about-choose">
+        <section className="about-choose" style={{overflow:"hidden"}}>
             <img data-aos='fade-up' src={tangeriene} alt="" />
             <div className="choose-box">
                 <div data-aos='fade-left' className="choose-stamp">
