@@ -6,7 +6,7 @@ import { FaAngleRight } from "react-icons/fa6";
 import Navbar from '../components/Navbar/Navbar';
 import Juice from '../components/Juice';
 import AboutHome from '../components/AboutHome';
-import video from "../assets/banner.mp4"
+import banner from "../assets/banner.mp4"
 import usp from '../jsons/usp';
 import winner from '../assets/winner.png'
 
@@ -21,7 +21,7 @@ function Home() {
       <Navbar />
       <section className='home' id='home'>
         <video className="home-banner" autoPlay loop muted playsInline>
-          <source src={video} type="video/mp4" />
+          <source src={banner} type="video/mp4" />
         </video>
         <div className="home-section">
           <div className="home-box">
