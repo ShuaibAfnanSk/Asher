@@ -2,6 +2,7 @@ import invest from '../../assets/cocktail.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
+import fruits from "../../assets/fruits.png"
 
 const Invest = () => {
 
@@ -11,14 +12,20 @@ const Invest = () => {
 
     return (
 
-        <div className="join-wrapper">
+        <div className="join-wrapper" style={{ overflow: "hidden" }}>
             <div className="ageTitle">
                 <h3 data-aos='fade-up'>Join the Asher Movement</h3>
                 <p data-aos='fade-up'>Choose Asher - Reward Yourself and experience the difference</p>
             </div>
             <div className="join-container">
-                <div className="join-img">
-                    <img data-aos='fade-up' src={invest} alt="" />
+                <div className="join-left">
+                    <div className="join-img">
+                        <img data-aos='fade-up' className='joiner' src={invest} alt="" />
+                        <div className='join-fade' data-aos="fade-left">
+                            <p>So go ahead reward yourself with the purity of nature and the promise of health. At Asher, we don’t compromise on your well-being.</p>
+                            <img src={fruits} alt="" />
+                        </div>
+                    </div>
                 </div>
                 <div className="join-box">
                     <div data-aos='fade-up' className="join-stamp">

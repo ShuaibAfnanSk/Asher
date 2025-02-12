@@ -1,4 +1,4 @@
-import banner from "../assets/wavy.png"
+import banner from "../assets/wavy.png";
 import { Link } from "react-router-dom";
 import products from "../jsons/products";
 import { useEffect } from "react";
