@@ -1514,7 +1514,7 @@ body {
 .join-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 3rem;
     padding: 0 2rem;
     padding-bottom: 5rem;
 }
@@ -1568,14 +1568,25 @@ body {
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
-.join-fade img {
-    width: 125px;
-    height: 125px;
+.lemon {
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     position: absolute;
-    bottom: -25px;
+    bottom: 0px;
+    left: -50px;
+    z-index: 1;
+}
+
+.watermelon {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    position: absolute;
+    bottom: -70px;
     right: -50px;
     z-index: 1;
+    transform: rotate(-210deg);
 }
 
 .join-stamp {

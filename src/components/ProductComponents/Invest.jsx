@@ -2,7 +2,9 @@ import invest from '../../assets/cocktail.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-import fruits from "../../assets/fruits.png"
+import watermelon from "../../assets/watermelon.png";
+import apple from "../../assets/apple.png"
+import lemon from "../../assets/lemon.png"
 
 const Invest = () => {
 
@@ -23,7 +25,8 @@ const Invest = () => {
                         <img data-aos='fade-up' className='joiner' src={invest} alt="" />
                         <div className='join-fade' data-aos="fade-left">
                             <p>So go ahead reward yourself with the purity of nature and the promise of health. At Asher, we don’t compromise on your well-being.</p>
-                            <img src={fruits} alt="" />
+                            <img className='watermelon' src={watermelon} alt="" />
+                            <img className='lemon' src={lemon} alt="" />
                         </div>
                     </div>
                 </div>
