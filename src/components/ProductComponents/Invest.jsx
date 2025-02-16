@@ -2,9 +2,7 @@ import invest from '../../assets/cocktail.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-import watermelon from "../../assets/watermelon.png";
-import apple from "../../assets/apple.png"
-import lemon from "../../assets/lemon.png"
+import kiwi from "../../assets/kiwi.jpg"
 
 const Invest = () => {
 
@@ -23,23 +21,19 @@ const Invest = () => {
                 <div className="join-left">
                     <div className="join-img">
                         <img data-aos='fade-up' className='joiner' src={invest} alt="" />
-                        <div className='join-fade' data-aos="fade-left">
-                            <p>So go ahead reward yourself with the purity of nature and the promise of health. At Asher, we don’t compromise on your well-being.</p>
-                            <img className='watermelon' src={watermelon} alt="" />
-                            <img className='lemon' src={lemon} alt="" />
-                        </div>
+                        <img data-aos='fade-right' className='kiwi' src={kiwi} alt="" />
                     </div>
                 </div>
-                <div className="join-box">
-                    <div data-aos='fade-up' className="join-stamp">
+                <div data-aos='fade-up' className="join-box">
+                    <div className="join-stamp">
                         <i class="ph ph-checks"></i>
                         <p>100% organic, preservative-free, and health-conscious beverages.</p>
                     </div>
-                    <div data-aos='fade-up' className="join-stamp">
+                    <div className="join-stamp">
                         <i class="ph ph-checks"></i>
                         <p>Products crafted with love, care, and nature’s finest ingredients.</p>
                     </div>
-                    <div data-aos='fade-up' className="join-stamp">
+                    <div className="join-stamp">
                         <i class="ph ph-checks"></i>
                         <p>A commitment to educating and empowering you for better health choices.</p>
                     </div>

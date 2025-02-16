@@ -8,7 +8,7 @@ import eco from '../../assets/eco.png';
 import health from '../../assets/health.png';
 import awareness from '../../assets/awareness.png';
 import community from '../../assets/community.png';
-import drink from '../../assets/drink.jpg';
+import drink from '../../assets/about.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";

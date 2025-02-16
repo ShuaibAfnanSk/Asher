@@ -16,6 +16,11 @@ const Juice = () => {
             <div className="ageTitle">
                 <h3 data-aos='fade-up'>Our Juices</h3>
                 <p data-aos='fade-up'>Make your choice</p>
+                <div className="fruits-images" data-aos='fade-up'>
+                    <img src="https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/coconut.png" alt="" />
+                    <img src="https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png" alt="" />
+                    <img src="https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pine-apple.png" alt="" />
+                </div>
             </div>
             <div className="juice-container">
                 {products.map((product) => (

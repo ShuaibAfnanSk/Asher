@@ -8,7 +8,9 @@ const Reaction = ({ product }) => {
         <section id="reaction" className="reaction-wrapper">
             <div className="reaction-container">
                 <div className="reaction-img">
-                    <img src={product.image} alt="" />
+                    <div className="img-box">
+                        <img src={product.image} alt="" />
+                    </div>
                 </div>
                 <div className="reaction-box">
                     <Cards product={product.bodyReaction} heading={"Body Reaction"} tagline={"Know the changes which occur in your body after consumption"} image={body} />

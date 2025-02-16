@@ -1,5 +1,5 @@
 import svg from "../assets/drink-svg.png";
-import banner from "../assets/mocktail.jpg"
+import banner from "../assets/drink.jpg"
 import { Link } from "react-router-dom";
 import products from "../jsons/products";
 import { useEffect } from "react";
