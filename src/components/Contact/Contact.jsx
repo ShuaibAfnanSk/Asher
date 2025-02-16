@@ -15,8 +15,8 @@ function Contact() {
     return (
         <section className='polo-wrapper'>
             <div className='ageTitle'>
-                <h3>Join us</h3>
-                <p>Be a part of Asher Community</p>
+                <h3 data-aos='fade-up'>Join us</h3>
+                <p data-aos='fade-up'>Be a part of Asher Community</p>
             </div>
             <div className='polo-container'>
                 <div className='polo-imgs'>
@@ -29,7 +29,7 @@ function Contact() {
                 <div className='polo-right'>
                     <div className='polo-box'>
                         <p data-aos='fade-up'>Be part of the Asher movement where health meets purity! Choose 100% organic, preservative-free juices crafted for your well-being. Join us in embracing nature’s finest, raising awareness about real nutrition, and building a healthier future. Reward yourself with the gift of wellness. Join Asher today! 🍃💚</p>
-                        <button data-aos='fade-up'><Link to={'/contact'}>Contact us</Link></button>
+                        <button data-aos='fade-up' className='bg-teal-950'><Link to={'/contact'}>Contact us</Link></button>
                     </div>
                 </div>
             </div>

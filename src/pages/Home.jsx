@@ -8,7 +8,7 @@ import Juice from '../components/Juice';
 import AboutHome from '../components/AboutHome';
 import banner from "../assets/banner.mp4"
 import usp from '../jsons/usp';
-import winner from '../assets/winner.png'
+import winner from '../assets/winner.png';
 
 function Home() {
 
