@@ -5,7 +5,7 @@ function Terms() {
     return (
         <>
             <NavbarContact />
-            <div className='flex flex-col pt-28 p-8 gap-5 text-[16px] mono-sans'>
+            <div className='flex flex-col pt-28 p-8 pb-12 gap-5 text-[16px] mono-sans'>
                 <h1 className='text-2xl text-teal-950 font-bold'>Terms & Conditions</h1>
                 <p>Welcome to Asher – Reward Yourself. By accessing our website or scanning product QR codes, you agree to the following terms and conditions.</p>
                 <div className="flex flex-col gap-3">

@@ -10,7 +10,7 @@ const Expert = ({ product }) => {
 
     return (
         <div className="expert-wrapper">
-            <img data-aos='fade-aos' src={product.details[0].image} alt="" />
+            <img data-aos='fade-bottom' src={product.details[0].image} alt="" />
             <div className="expert-quote">
                 <p data-aos='fade-up'>"{product.expertQuote.quote}"</p>
             </div>

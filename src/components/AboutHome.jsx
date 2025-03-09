@@ -15,8 +15,13 @@ const AboutHome = () => {
     return (
         <section className="ah-section" id="about">
             <div className="ageTitle">
-                <h3 data-aos='fade-up'>About Us</h3>
+                <h3 data-aos='fade-up'>About</h3>
                 <p data-aos='fade-up'>Know our motivation and origin</p>
+                <div className="fruits-images" data-aos='fade-up'>
+                    <img src="https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/coconut.png" alt="" />
+                    <img src="https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png" alt="" />
+                    <img src="https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pine-apple.png" alt="" />
+                </div>
             </div>
             <div className="ah-wrapper">
                 <div className="ah-img">
@@ -35,7 +40,7 @@ const AboutHome = () => {
                             <img src={svg} alt="" />
                             <p>With every sip of our fresh, pure juices, you’re not just rewarding yourself—you’re choosing a healthier, stronger, and happier you.</p>
                         </div>
-                        <Link className="click" to={'/about'}><button>Know more</button></Link>
+                        <Link data-aos="fade-up" className="click" to={'/about'}><button>Know more</button></Link>
                     </div>
                 </div>
             </div>

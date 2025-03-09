@@ -5,7 +5,7 @@ function Privacy() {
   return (
     <>
       <NavbarContact />
-      <div className='flex flex-col pt-28 p-8 gap-5 text-[16px] mono-sans'>
+      <div className='flex flex-col pt-28 p-8 pb-12 gap-5 text-[16px] mono-sans'>
         <h1 className='text-2xl text-teal-950 font-bold'>Privacy Policy</h1>
         <p>At Asher – Reward Yourself, we prioritize your privacy. This Privacy Policy outlines how we handle information collected through your interaction with our website and QR code features.</p>
         <div className="flex flex-col gap-3">
