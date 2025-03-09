@@ -1532,6 +1532,12 @@ body {
     padding-bottom: 8rem;
 }
 
+@media (max-width:1000px) {
+    .join-wrapper {
+        padding-bottom: 3rem;
+    }
+}
+
 .join-container {
     display: flex;
     gap: 3rem;
