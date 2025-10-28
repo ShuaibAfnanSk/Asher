@@ -1,7 +1,4 @@
-import svg from "../assets/drink-svg.png";
-import banner from "../assets/drink.jpg"
 import { Link } from "react-router-dom";
-import products from "../jsons/products";
 import { useEffect } from "react";
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -17,27 +14,22 @@ const AboutHome = () => {
             <div className="ageTitle">
                 <h3 data-aos='fade-up'>About</h3>
                 <p data-aos='fade-up'>Know our motivation and origin</p>
-                <div className="fruits-images" data-aos='fade-up'>
-                    <img src="https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/coconut.png" alt="" />
-                    <img src="https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png" alt="" />
-                    <img src="https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pine-apple.png" alt="" />
-                </div>
             </div>
             <div className="ah-wrapper">
                 <div className="ah-img">
                     <div className="ah-banner">
-                        <img data-aos='fade-up' src={banner} className="ah-polo" alt="" />
-                        <img data-aos='fade-up' src={products[1].details[0].image} className="ah-fruit" alt="" />
+                        <img data-aos='fade-up' src="https://ik.imagekit.io/akiAfnan/Asher/apple.jpg?tr=w-700,h-500,f-auto,q-auto,fo-auto" className="ah-polo" alt="" />
+                        <img data-aos='fade-up' src="https://ik.imagekit.io/akiAfnan/Asher/loader.png?tr=w-200,h-200,f-auto,q-auto,fo-auto" className="ah-fruit" alt="" />
                     </div>
                 </div>
                 <div className="ah-container">
                     <div className="ah-content">
                         <div data-aos='fade-up' className="ah-box">
-                            <img src={svg} alt="" />
+                            <img src="https://ik.imagekit.io/akiAfnan/Asher/drink-svg.png?tr=w-50,h-50,f-auto,q-auto,fo-auto" alt="" />
                             <p>At Asher, we believe it’s never too late to return to what’s right. It’s time to step away from the artificial and embrace the natural. </p>
                         </div>
                         <div data-aos='fade-up' className="ah-box">
-                            <img src={svg} alt="" />
+                            <img src="https://ik.imagekit.io/akiAfnan/Asher/drink-svg.png?tr=w-50,h-50,f-auto,q-auto,fo-auto" alt="" />
                             <p>With every sip of our fresh, pure juices, you’re not just rewarding yourself—you’re choosing a healthier, stronger, and happier you.</p>
                         </div>
                         <Link data-aos="fade-up" className="click" to={'/about'}><button>Know more</button></Link>

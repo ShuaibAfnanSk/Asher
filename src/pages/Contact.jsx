@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
 import contactImg from '../assets/images/contact-us.svg';
 import Aos from 'aos';

@@ -1,14 +1,3 @@
-import juice from '../../assets/juice.png';
-import organic from '../../assets/organic.png';
-import sugar from '../../assets/sugar.png';
-import hygiene from '../../assets/hygiene.png';
-import transparency from '../../assets/transparency.png';
-import lifestyle from '../../assets/lifestyle.png';
-import eco from '../../assets/eco.png';
-import health from '../../assets/health.png';
-import awareness from '../../assets/awareness.png';
-import community from '../../assets/community.png';
-import drink from '../../assets/about.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -23,14 +12,14 @@ const Make = () => {
         <section className="about-make">
             <div className="make-wrapper">
                 <div className="drink-image">
-                    <img src={drink} alt="" />
+                    <img src="https://ik.imagekit.io/akiAfnan/Asher/about.jpg?tr=w-450,h-600,f-auto,q-auto,fo-auto" alt="" />
                 </div>
                 <div className="make-container">
                     <div className='ageTitle'>
                         <h3 data-aos='fade-up'>What Makes Us Different?</h3>
                     </div>
                     <div data-aos='fade-up' className="make-box">
-                        <img src={juice} alt="" />
+                        <img src="https://ik.imagekit.io/akiAfnan/Asher/juice.png" alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>1. Pure, Cold-Pressed Goodness</h4>
@@ -38,7 +27,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div data-aos='fade-up' className="make-box">
-                        <img src={organic} alt="" />
+                        <img src="https://ik.imagekit.io/akiAfnan/Asher/organic.png" alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>2. 100% Organic and Natural</h4>
@@ -51,7 +40,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div data-aos='fade-up' className="make-box">
-                        <img src={sugar} alt="" />
+                        <img src="https://ik.imagekit.io/akiAfnan/Asher/sugar.png" alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>3. Educating About Sugar – The Hidden Poison</h4>
@@ -65,7 +54,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div data-aos='fade-up' className="make-box">
-                        <img src={hygiene} alt="" />
+                        <img src="https://ik.imagekit.io/akiAfnan/Asher/hygiene.png" alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>4. Unmatched Hygiene Standards</h4>
@@ -78,7 +67,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div data-aos='fade-up' className="make-box">
-                        <img src={transparency} alt="" />
+                        <img src="https://ik.imagekit.io/akiAfnan/Asher/transparency.png" alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>5. Transparency You Can Trust</h4>
@@ -91,7 +80,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div data-aos='fade-up' className="make-box">
-                        <img src={lifestyle} alt="" />
+                        <img src="https://ik.imagekit.io/akiAfnan/Asher/lifestyle.png" alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>6. Tailored for Every Lifestyle</h4>
@@ -99,7 +88,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div data-aos='fade-up' className="make-box">
-                        <img src={eco} alt="" />
+                        <img src="https://ik.imagekit.io/akiAfnan/Asher/eco.png" alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>7. Sustainable, Eco-Friendly Packaging</h4>
@@ -110,7 +99,7 @@ const Make = () => {
                     <h3 data-aos='fade-up'>Our Primary Focus</h3>
                     </div>
                     <div data-aos='fade-up' className="make-box">
-                        <img src={health} alt="" />
+                        <img src="https://ik.imagekit.io/akiAfnan/Asher/health.png" alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>1. Empowering a Healthy Lifestyle</h4>
@@ -118,7 +107,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div data-aos='fade-up' className="make-box">
-                        <img src={awareness} alt="" />
+                        <img src="https://ik.imagekit.io/akiAfnan/Asher/awareness.png" alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>2. Raising Awareness</h4>
@@ -131,7 +120,7 @@ const Make = () => {
                         </div>
                     </div>
                     <div data-aos='fade-up' className="make-box">
-                        <img src={community} alt="" />
+                        <img src="https://ik.imagekit.io/akiAfnan/Asher/community.png" alt="" />
                         <div className="make-stamp"><span></span><span></span><span></span></div>
                         <div className="make-content">
                             <h4>3. Building a Community</h4>

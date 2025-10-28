@@ -1,4 +1,3 @@
-import banner from "../assets/wavy.png";
 import { Link } from "react-router-dom";
 import products from "../jsons/products";
 import { useEffect } from "react";
@@ -17,16 +16,16 @@ const Juice = () => {
                 <h3 data-aos='fade-up'>Our Juices</h3>
                 <p data-aos='fade-up'>Make your choice</p>
                 <div className="fruits-images" data-aos='fade-up'>
-                    <img src="https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/coconut.png" alt="" />
-                    <img src="https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/lemon.png" alt="" />
-                    <img src="https://raw.githubusercontent.com/ShuaibAfnanSk/Asher/refs/heads/main/pine-apple.png" alt="" />
+                    <img src="https://ik.imagekit.io/akiAfnan/Asher/coconut.png?tr=w-100,h-100,f-auto,q-auto,fo-auto" alt="" />
+                    <img src="https://ik.imagekit.io/akiAfnan/Asher/lemon.png?tr=w-100,h-100,f-auto,q-auto,fo-auto" alt="" />
+                    <img src="https://ik.imagekit.io/akiAfnan/Asher/pine-apple.png?tr=w-100,h-100,f-auto,q-auto,fo-auto" alt="" />
                 </div>
             </div>
             <div className="juice-container">
                 {products.map((product) => (
                     <div data-aos='fade-up' className="juice-card">
                         <Link className="juice-img" to={`product/${product.id}`} style={{ backgroundColor: product.color }}>
-                            <img src={banner} className="wavy" alt="" />
+                            <img src="https://ik.imagekit.io/akiAfnan/Asher/wavy.png?tr=w-500,h-500,f-auto,q-auto,fo-auto" className="wavy" alt="" />
                             <img src={product.image} className="juice-can" alt="" />
                             <img src={product.details[0].image} className="juice-fruit" alt="" />
                             <div className="juice-content">

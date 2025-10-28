@@ -1,4 +1,3 @@
-import tangeriene from '../../assets/tangeriene.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
@@ -11,7 +10,7 @@ const Choose = () => {
 
     return (
         <section className="about-choose" style={{overflow:"hidden"}}>
-            <img data-aos='fade-up' src={tangeriene} alt="" />
+            <img data-aos='fade-up' src="https://ik.imagekit.io/akiAfnan/Asher/tangeriene.jpg?tr=w-1400,h-700,f-auto,q-auto,fo-auto" alt="" />
             <div className="choose-box">
                 <div data-aos='fade-left' className="choose-stamp">
                     <h3>Why Choose Asher?</h3>

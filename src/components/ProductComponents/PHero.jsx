@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import wavy from "../../assets/wavy.png";
 import usp from "../../jsons/usp";
 import NavbarProduct from "../Navbar/NavbarProduct";
 import Aos from "aos";
@@ -24,7 +23,7 @@ const PHero = ({ product }) => {
         <>
             <NavbarProduct />
             <section className="product-hero" style={{ backgroundColor: product.color }}>
-                <img src={wavy} className="wavy" alt="" />
+                <img src="https://ik.imagekit.io/akiAfnan/Asher/wavy.png?tr=w-1400,h-700,f-auto,q-auto,fo-auto" className="wavy" alt="" />
                 <img className="product-img" src={product.image} alt="" />
                 <div className="product-fruit">
                     <img src={product.details[0].image} alt="" />

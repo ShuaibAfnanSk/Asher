@@ -1,29 +1,23 @@
-import pure from "../assets/pure.png";
-import sugar from "../assets/sugar.png";
-import juice from "../assets/juice.png";
-import flavor from "../assets/nature.png";
-import preservatives from "../assets/preservatives.png";
-
 const usp = [
     {
         name: "Raw Cold Pressed",
-        image: juice,
+        image: "https://ik.imagekit.io/akiAfnan/Asher/juice.png?tr=w-50,h-50,f-auto,q-auto,fo-auto",
     },
     {
         name: "No preservatives",
-        image: preservatives,
+        image: "https://ik.imagekit.io/akiAfnan/Asher/preservatives.png?tr=w-50,h-50,f-auto,q-auto,fo-auto",
     },
     {
         name: "No added flavours",
-        image: flavor,
+        image: "https://ik.imagekit.io/akiAfnan/Asher/nature.png?tr=w-50,h-50,f-auto,q-auto,fo-auto",
     },
     {
         name: "No added sugar",
-        image: sugar,
+        image: "https://ik.imagekit.io/akiAfnan/Asher/sugar.png?tr=w-50,h-50,f-auto,q-auto,fo-auto",
     },
     {
         name: "Pure as nature",
-        image: pure,
+        image: "https://ik.imagekit.io/akiAfnan/Asher/pure.png?tr=w-50,h-50,f-auto,q-auto,fo-auto",
     }
 ]
 

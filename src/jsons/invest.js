@@ -1,19 +1,15 @@
-import nature from '../assets/nature.png';
-import wellness from '../assets/wellness.png';
-import quality from '../assets/quality.png';
-
 const invest = [
     {
         name: "Nature over artificial quick fixes.",
-        image: nature
+        image: "https://ik.imagekit.io/akiAfnan/Asher/nature.png?tr=w-100,h-100,f-auto,q-auto,fo-auto"
     },
     {
         name: "Wellness over compromises.",
-        image: wellness
+        image: "https://ik.imagekit.io/akiAfnan/Asher/wellness.png?tr=w-100,h-100,f-auto,q-auto,fo-auto"
     },
     {
         name: "Quality over convenience.",
-        image: quality
+        image: "https://ik.imagekit.io/akiAfnan/Asher/quality.png?tr=w-100,h-100,f-auto,q-auto,fo-auto"
     },
 ]
 

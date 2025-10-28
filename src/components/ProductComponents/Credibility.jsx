@@ -1,5 +1,4 @@
 import Aos from 'aos';
-import source from '../../assets/source.png';
 import { useEffect } from 'react';
 
 const Credibility = ({ product }) => {
@@ -17,7 +16,7 @@ const Credibility = ({ product }) => {
             <div className="faq-tail">
                 {product.sourceCredibility.map((f, id) => (
                     <div data-aos='fade-up' key={id} className="faq-box">
-                        <div className="faq-block cred-block"><p>{f}</p><img src={source} alt="" /></div>
+                        <div className="faq-block cred-block"><p>{f}</p><img src="https://ik.imagekit.io/akiAfnan/Asher/source.png?tr=w-75,h-75,f-auto,q-auto,fo-auto" alt="" /></div>
                     </div>
                 ))}
             </div>

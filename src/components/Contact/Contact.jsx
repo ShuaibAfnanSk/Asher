@@ -1,10 +1,6 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import apple from '../../assets/apple.jpg';
-import rasp from '../../assets/rasp.jpg';
-import open from '../../assets/open.jpg';
-import { Link } from 'react-router-dom';
 import { FaAngleRight } from 'react-icons/fa';
 
 function Contact() {
@@ -30,8 +26,8 @@ function Contact() {
                 </div>
                 <div className='polo-imgs'>
                     <div className='polos'>
-                        <img data-aos='fade-up' src={apple} alt="" />
-                        <img data-aos='fade-up' src={rasp} alt="" />
+                        <img data-aos='fade-up' src="https://ik.imagekit.io/akiAfnan/Asher/apple.jpg?tr=w-200,h-200,f-auto,q-auto,fo-auto" alt="" />
+                        <img data-aos='fade-up' src="https://ik.imagekit.io/akiAfnan/Asher/rasp.jpg?tr=w-200,h-200,f-auto,q-auto,fo-auto" alt="" />
                     </div>
                 </div>
             </div>

@@ -1,8 +1,6 @@
-import invest from '../../assets/cocktail.jpg';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
-import kiwi from "../../assets/kiwi.jpg"
 
 const Invest = () => {
 
@@ -20,8 +18,8 @@ const Invest = () => {
             <div className="join-container">
                 <div className="join-left">
                     <div className="join-img">
-                        <img data-aos='fade-up' className='joiner' src={invest} alt="" />
-                        <img data-aos='fade-right' className='kiwi' src={kiwi} alt="" />
+                        <img data-aos='fade-up' className='joiner' src="https://ik.imagekit.io/akiAfnan/Asher/cocktail.jpg?tr=w-500,h-500,f-auto,q-auto,fo-auto" alt="" />
+                        <img data-aos='fade-right' className='kiwi' src="https://ik.imagekit.io/akiAfnan/Asher/kiwi.jpg?tr=w-250,h-250,f-auto,q-auto,fo-auto" alt="" />
                     </div>
                 </div>
                 <div data-aos='fade-up' className="join-box">
