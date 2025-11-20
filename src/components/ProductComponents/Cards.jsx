@@ -6,8 +6,8 @@ const Cards = ({product, heading, tagline, image}) => {
                 <p>{tagline}</p>
             </div>
             <div className="reactions">
-                {product.map((r) => (
-                    <div className="reaction">
+                {product.map((r, id) => (
+                    <div key={id} className="reaction">
                         <h4>{r.duration}</h4>
                         <p>{r.benefits}</p>
                         <img src={image} alt="" />

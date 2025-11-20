@@ -22,8 +22,8 @@ const Ingredients = ({ product }) => {
             <Marquee product={product} />
             <div className="ingredient-wrapper">
                 <div className="ingredient-container">
-                    {product.details.map((d) => (
-                        <div className={`ingredient ${flippedStates[d.ingredient] ? "flipped" : ""}`}>
+                    {product.details.map((d, id) => (
+                        <div key={id} className={`ingredient ${flippedStates[d.ingredient] ? "flipped" : ""}`}>
                             <div className="ingredient-front">
                                 <img src={d.image} alt="" />
                                 <h4>{d.ingredient}</h4>

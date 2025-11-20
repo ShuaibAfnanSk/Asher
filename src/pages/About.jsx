@@ -1,14 +1,14 @@
+import Choose from "../components/AboutComponents/Choose";
+import Invest from "../components/AboutComponents/Invest";
+import Make from "../components/AboutComponents/Make";
+import Story from "../components/AboutComponents/Story";
 import Navbar from "../components/Navbar/Navbar";
-import Choose from "../components/ProductComponents/Choose";
-import Invest from "../components/ProductComponents/Invest";
-import Make from "../components/ProductComponents/Make";
-import Story from "../components/ProductComponents/Story";
 
 const About = () => {
     return (
         <>
             <Navbar />
-            <main className="about">
+            <main className="flex flex-col w-full gap-20 mb-[5rem]">
                 <Story />
                 <Choose />
                 <Make />

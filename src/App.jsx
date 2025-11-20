@@ -51,7 +51,7 @@ function App() {
       {/* Loader */}
       {loading && (
         <div className={`loader-container ${animateOut ? "move-up" : ""}`}>
-          <div class="loader"></div>
+          <div className="loader"></div>
         </div>
       )}
 

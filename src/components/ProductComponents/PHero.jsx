@@ -23,7 +23,7 @@ const PHero = ({ product }) => {
         <>
             <NavbarProduct />
             <section className="product-hero" style={{ backgroundColor: product.color }}>
-                <img src="https://ik.imagekit.io/akiAfnan/Asher/wavy.png?tr=w-1400,h-700,f-auto,q-auto,fo-auto" className="wavy" alt="" />
+                <img src="https://ik.imagekit.io/akiAfnan/Asher/wavy.png?tr=w-1400,h-700,f-auto,q-auto,fo-auto" className="wave-pattern" alt="" />
                 <img className="product-img" src={product.image} alt="" />
                 <div className="product-fruit">
                     <img src={product.details[0].image} alt="" />
@@ -34,8 +34,8 @@ const PHero = ({ product }) => {
                     <h4 style={{ color: product.color }}><i className="ph ph-brandy"></i> - {product.name}</h4>
                     <p className="product-taste">"{product.taste}"</p>
                     <div className="product-stamps">
-                        {usp.slice(1, 4).map((u) => (
-                            <div className="product-stamp">
+                        {usp.slice(1, 4).map((u, id) => (
+                            <div key={id} className="product-stamp">
                                 <img src={u.image} alt="" />
                                 <p>{u.name}</p>
                             </div>
