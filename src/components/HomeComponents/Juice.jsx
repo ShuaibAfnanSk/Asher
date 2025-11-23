@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
-import products from "../../jsons/products";
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import SectionHeader from "../SectionHeader";
+import { useData } from "../../context/DataContext";
 
 const Juice = () => {
+ 
+  const { products } = useData();
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);

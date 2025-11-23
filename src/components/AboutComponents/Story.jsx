@@ -1,11 +1,13 @@
-import invest from "../../jsons/invest";
-import vision from "../../jsons/vision";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import SectionHeader from "../SectionHeader";
+import { useData } from "../../context/DataContext";
 
 const Story = () => {
+
+  const { invest, vision } = useData();
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
