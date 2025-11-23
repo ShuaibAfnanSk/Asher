@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-[100vh] flex items-end w-full" id="home">
       <video
-        className="w-full h-full object-cover absolute brightness-75"
+        className="w-full h-full object-cover absolute brightness-90"
         autoPlay
         loop
         muted
@@ -21,7 +21,7 @@ const Hero = () => {
       </video>
       <div className="w-full absolute p-8 h-full text-white flex items-center justify-center overflow-hidden">
         <div className="flex border-2 relative -translate-y-10 border-white p-10 rounded-lg flex-col w-full sm:w-[600px] gap-5 items-center text-center">
-          {/* <div className="absolute h-full w-full" data-aos="fade-up">
+          <div className="absolute h-full w-full" data-aos="fade-up">
             <img
               className="absolute w-[50px] h-[50px] object-cover -top-32 left-32"
               src="https://ik.imagekit.io/akiAfnan/Asher/lemon.png?tr=w-100,h-100,f-auto,q-auto,fo-auto"
@@ -37,7 +37,7 @@ const Hero = () => {
               src="https://ik.imagekit.io/akiAfnan/Asher/loader.png?tr=w-100,h-100,f-auto,q-auto,fo-auto"
               alt=""
             />
-          </div> */}
+          </div>
           <div className="absolute -top-[25px] left-[50%] -translate-x-[50%] rounded-full bg-white w-[50px] h-[50px] flex items-center justify-center">
             <img
               className="w-[25px] h-[25px]"

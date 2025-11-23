@@ -15,7 +15,7 @@ const Credibility = ({ product }) => {
       />
       <div className="w-full lg:w-[900px] flex flex-col gap-4">
         {product.sourceCredibility.map((f, id) => (
-          <div key={id} className="bg-white px-6 py-5 relative flex flex-col overflow-hidden gap-2 rounded-[3rem]">
+          <div data-aos="fade-up" key={id} className="bg-white px-6 py-5 relative flex flex-col overflow-hidden gap-2 rounded-[3rem]">
             <p>{f}</p>
             <img
               className="w-[50px] h-[50px] absolute bottom-0 right-0 -rotate-[25deg]"
