@@ -1,13 +1,16 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import make from "../../jsons/make";
 import MakeBox from "./MakeBox";
+import { useData } from "../../context/DataContext";
 
 const Make = () => {
+
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
+
+  const { make } = useData();
 
   return (
     <section className="column-section items-center">

@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import usp from "../../jsons/usp";
 import NavbarProduct from "../Navbar/NavbarProduct";
 import Aos from "aos";
+import { useData } from "../../context/DataContext";
 
 const PHero = ({ product }) => {
 
     const [showPopup, setShowPopup] = useState(false);
+    const { usp } = useData();
 
     useEffect(() => {
         setShowPopup(true);
