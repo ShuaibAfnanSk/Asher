@@ -13,9 +13,13 @@
     rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
+.asher {
+  font-family: "New Amsterdam";
+}
+
 @layer components {
   .column-section {
-    @apply flex flex-col gap-12 w-full px-8;
+    @apply flex flex-col w-full 2xl:w-[1400px] gap-12 px-8;
   }
 
   .wave-pattern {
@@ -71,13 +75,22 @@ html::-webkit-scrollbar-thumb {
 }
 
 .logo {
-  font-family: "Honk";
+  font-family: "Danfo";
+  text-transform: uppercase;
   font-size: 32px;
 }
 
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.sticky-img {
+  background-image: url("https://ik.imagekit.io/akiAfnan/Asher/pexels-karola-g-4021983.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 button {
@@ -358,6 +371,20 @@ body {
 
   100% {
     transform: translateX(0%);
+  }
+}
+
+.spin {
+  animation: spin infinite 5s linear;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 

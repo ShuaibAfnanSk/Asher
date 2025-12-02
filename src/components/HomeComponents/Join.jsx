@@ -10,12 +10,12 @@ function Join() {
   }, []);
 
   return (
-    <section className="column-section">
+    <section className="bg-[#f8f8f8] py-16 w-full rounded-t-[32px] md:rounded-t-[48px] column-section">
       <SectionHeader
         title={"Join us"}
         description={"Be a part of Asher Community"}
       />
-      <div className="flex items-center gap-12 flex-col-reverse sm:flex-row">
+      <div className="flex items-center gap-12 flex-col-reverse lg:flex-row">
         <div className="flex-1 flex justify-center items-center">
           <div className="flex flex-col gap-8">
             <p className="w-full sm:w-[400px]" data-aos="fade-up">

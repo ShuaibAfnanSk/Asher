@@ -18,7 +18,7 @@ const Make = () => {
         <div className="w-full h-[100vh] lg:sticky top-9 flex-1 left-0 flex justify-center items-center">
           <img
             className="w-full lg:w-[400px] h-[500px] object-cover rounded-lg"
-            src="https://ik.imagekit.io/akiAfnan/Asher/about.jpg?tr=w-450,h-600,f-auto,q-auto,fo-auto"
+            src="https://ik.imagekit.io/akiAfnan/Asher/about.jpg?tr=w-600,h-900,f-auto,q-auto,fo-auto"
             alt=""
           />
         </div>

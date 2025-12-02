@@ -56,7 +56,7 @@ function Contact() {
       <Navbar />
       <div className="w-full h-[100vh] relative flex flex-col items-center justify-center">
         <video
-          className="w-full h-full brightness-90 object-cover"
+          className="w-full h-full object-cover"
           autoPlay
           loop
           muted
