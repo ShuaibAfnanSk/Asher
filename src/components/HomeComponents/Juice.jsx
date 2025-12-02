@@ -14,11 +14,10 @@ const Juice = () => {
   }, []);
 
   return (
-    <section className="column-section">
+    <section className="column-section bg-[#f8f8f8] pt-8 pb-16 rounded-b-[32px] md:rounded-b-[48px] w-full">
       <SectionHeader
         title={"Our Juices"}
         description={"Crafted with real fruit goodness"}
-        images={true}
       />
       <div className="flex justify-center flex-wrap gap-8">
         {products.map((product, id) => (

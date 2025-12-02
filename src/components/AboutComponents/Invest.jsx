@@ -23,18 +23,18 @@ const Invest = () => {
         }
       />
       <div className="flex flex-col lg:flex-row gap-12">
-        <div className="flex justify-center items-center flex-1 relative">
-          <div className="relative w-[250px] sm:w-[450px] h-[250px] sm:h-[450px]">
+        <div className="flex items-center justify-center flex-1">
+          <div className="h-[325px] w-[350px] relative flex justify-center items-center">
             <img
               data-aos="fade-up"
-              className="w-full h-full object-cover rounded-full"
-              src="https://ik.imagekit.io/akiAfnan/Asher/cocktail.jpg?tr=w-500,h-500,f-auto,q-auto,fo-auto"
+              className="w-[200px] h-[200px] absolute rounded-full object-cover top-0"
+              src="https://ik.imagekit.io/akiAfnan/Asher/pexels-charlotte-may-5946661.jpg?tr=w-400,h-400,f-auto,q-auto,fo-auto"
               alt=""
             />
             <img
-              data-aos="fade-right"
-              className="absolute w-[150px] sm:w-[250px] h-[150px] sm:h-[250px] object-cover rounded-full bottom-0 sm:-bottom-12 -right-12 sm:-right-24"
-              src="https://ik.imagekit.io/akiAfnan/Asher/kiwi.jpg?tr=w-250,h-250,f-auto,q-auto,fo-auto"
+              data-aos="fade-up"
+              className="w-[200px] h-[200px] absolute rounded-full object-cover right-0 bottom-0"
+              src="https://ik.imagekit.io/akiAfnan/Asher/pexels-charlotte-may-5947069.jpg?tr=w-400,h-400,f-auto,q-auto,fo-auto"
               alt=""
             />
           </div>
@@ -45,10 +45,8 @@ const Invest = () => {
         >
           {texts.map((text, id) => (
             <div key={id} className="w-full sm:w-[300px] flex gap-4">
-              <i className="ph ph-checks -translate-y-1"></i>
-              <p>
-                {text}
-              </p>
+              <i className="ph ph-checks"></i>
+              <p>{text}</p>
             </div>
           ))}
         </div>

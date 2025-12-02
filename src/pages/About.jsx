@@ -8,7 +8,7 @@ const About = () => {
     return (
         <>
             <Navbar />
-            <main className="flex flex-col w-full gap-20 mb-[5rem]">
+            <main className="flex flex-col w-full items-center gap-16 mb-[5rem]">
                 <Story />
                 <Choose />
                 <Make />

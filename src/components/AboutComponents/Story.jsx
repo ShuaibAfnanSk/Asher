@@ -23,17 +23,17 @@ const Story = () => {
   ];
 
   return (
-    <section className="h-full w-full flex flex-col gap-12 overflow-hidden">
+    <section className="h-full w-full flex flex-col gap-16 overflow-hidden items-center">
       <div className="w-full h-[100vh] relative flex flex-col items-center justify-center">
         <video
-          className="w-full h-full brightness-90 object-cover"
+          className="w-full h-full object-cover"
           autoPlay
           loop
           muted
           playsInline
         >
           <source
-            src="https://ik.imagekit.io/akiAfnan/Asher/about.mp4"
+            src="https://ik.imagekit.io/akiAfnan/Asher/banner.mp4"
             type="video/mp4"
           />
         </video>
