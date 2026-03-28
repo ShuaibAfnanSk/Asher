@@ -9,8 +9,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px,
-    rgba(17, 17, 26, 0.1) 0px 0px 8px;
+  --box-shadow:
+    rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
 .asher {
@@ -249,10 +249,10 @@ body {
 
 .product-fruit img {
   position: absolute;
-  width: 150px;
+  width: 175px;
   height: 175px;
   z-index: 1;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .product-fruit img:nth-child(1) {
@@ -1015,19 +1015,22 @@ body {
 }
 
 .subtle-shadow {
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 .bordered-shadow {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .contact-form input,
 .contact-form textarea {
-  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
@@ -1132,7 +1135,9 @@ body {
   align-items: center;
   justify-content: center;
   z-index: 1000;
-  transition: transform 0.8s ease-in-out, opacity 0.5s ease-in-out;
+  transition:
+    transform 0.8s ease-in-out,
+    opacity 0.5s ease-in-out;
 }
 
 .move-up {
@@ -1154,7 +1159,9 @@ body {
   padding: 3px 5px;
   border-top: 1px solid #bbb6aa;
   border-bottom: 4px solid #bbb6aa;
-  background: linear-gradient(#612329 0 0) bottom no-repeat content-box, #e4e0d7;
+  background:
+    linear-gradient(#612329 0 0) bottom no-repeat content-box,
+    #e4e0d7;
   mix-blend-mode: darken;
   animation: l1 1.5s infinite linear;
 }

@@ -2,12 +2,12 @@ import { useState, useEffect } from "react";
 import { FaAngleRight } from "react-icons/fa";
 
 const cans = [
-  "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af8b39bf98e4cbfe35b6f6_Untitled%20design%20(12)%20(1).png",
-  "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c68df5e94bdf6d8d08d_1.png",
-  "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6fd0a17b480f1da3bb_3.png",
-  "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6ca2f291522ffd0d37_2.png",
-  "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6133ce62c932cf59e0_6.png",
-  "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c97372d85d43ff3c13f_1%20(1).png",
+  "https://ik.imagekit.io/akiAfnan/Asher/grape-drink.png",
+  "https://ik.imagekit.io/akiAfnan/Asher/watermelon-drink.png",
+  "https://ik.imagekit.io/akiAfnan/Asher/apple-drink.png",
+  "https://ik.imagekit.io/akiAfnan/Asher/ginger-drink.png",
+  "https://ik.imagekit.io/akiAfnan/Asher/pineapple-drink.png",
+  "https://ik.imagekit.io/akiAfnan/Asher/orange-drink.png",
 ];
 
 export default function Hero() {
@@ -54,14 +54,15 @@ export default function Hero() {
           <h3
             className="text-7xl md:text-9xl uppercase asher"
             style={{ lineHeight: "0.75" }}
+            data-aos="fade-up"
           >
             Asher
           </h3>
           <div className="flex flex-col gap-3">
-            <p className="font-black text-xl md:text-2xl">
+            <p className="font-black text-xl md:text-2xl" data-aos="fade-up">
               Blessings of Health, Happiness of Nature
             </p>
-            <p className="w-[300px] md:text-lg sm:w-[450px]">
+            <p className="w-[300px] md:text-lg sm:w-[450px]" data-aos="fade-up">
               What you pray for, nature has already gifted. Embrace the divine
               blessing of health with every sip.
             </p>
@@ -72,7 +73,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div className="relative md:absolute md:bottom-24 md:right-6 p-2 border-white border w-[250px] rounded-md">
+        <div data-aos="fade-up" className="relative md:absolute md:bottom-24 md:right-6 p-2 border-white border w-[250px] rounded-md">
           <img
             className="w-[50px] h-[50px] absolute -top-5 right-5 z-10 rotate-12"
             src="https://ik.imagekit.io/akiAfnan/Asher/winner.png"
