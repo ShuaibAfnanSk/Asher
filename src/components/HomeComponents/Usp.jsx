@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import { useData } from "../../context/DataContext";
 
 const cans = [
-  "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af8b39bf98e4cbfe35b6f6_Untitled%20design%20(12)%20(1).png",
-  "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c68df5e94bdf6d8d08d_1.png",
-  "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6fd0a17b480f1da3bb_3.png",
-  "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6ca2f291522ffd0d37_2.png",
-  "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c6133ce62c932cf59e0_6.png",
-  "https://cdn.prod.website-files.com/66ae838a004ef09aef08a56d/66af7c97372d85d43ff3c13f_1%20(1).png",
+  "https://ik.imagekit.io/akiAfnan/Asher/grape-drink.png",
+  "https://ik.imagekit.io/akiAfnan/Asher/watermelon-drink.png",
+  "https://ik.imagekit.io/akiAfnan/Asher/apple-drink.png",
+  "https://ik.imagekit.io/akiAfnan/Asher/ginger-drink.png",
+  "https://ik.imagekit.io/akiAfnan/Asher/pineapple-drink.png",
+  "https://ik.imagekit.io/akiAfnan/Asher/orange-drink.png",
 ];
 
 const Usp = () => {

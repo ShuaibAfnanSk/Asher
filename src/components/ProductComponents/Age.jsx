@@ -24,7 +24,7 @@ const AgeCriteria = ({ product }) => {
   return (
     <section id="age" className="ageWrapper">
       <SectionHeader title={"Age Criteria"} description={"Know the Age Criteria for Consumption"} />
-      <div className="ageContent">
+      <div className="ageContent" data-aos="fade-up">
         <div className="ageBtns">
           <div className="ageBtn" onClick={() => handleChange("left")}>
             <i style={{ color: product.color }} className="ph ph-caret-left"></i>
@@ -33,7 +33,7 @@ const AgeCriteria = ({ product }) => {
             <i style={{ color: product.color }} className="ph ph-caret-right"></i>
           </div>
         </div>
-        <LanguageBox className="ageSwiper" swiper={swiper}>
+        <LanguageBox data-aos="fade-up" className="ageSwiper" swiper={swiper}>
           {product.ageCriteria.map((a, id) => (
             <div key={id} className="age">
               <div className="ageStamp">
